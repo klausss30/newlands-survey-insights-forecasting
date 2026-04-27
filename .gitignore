@@ -1,0 +1,10 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Keep only portfolio-ready outputs in processed/
+data/processed/*
+!data/processed/newlands_analysis_ready_filtered.csv
+!data/processed/qc_summary.csv

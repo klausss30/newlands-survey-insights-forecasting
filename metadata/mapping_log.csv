@@ -1,0 +1,46 @@
+source_column,final_column,mapping_type,rule_summary,special_cases,years_affected
+Timestamp,date,date_parse,Parse raw Timestamp and output DD/MM/YYYY,Supports multiple timestamp formats,2019;2020;2022;2024;2025
+1. Postcode,postcode,rename_and_cast,Convert postcode to integer,Blank stays blank,2019;2020;2022;2024;2025
+2. Age range,age_range,rename_and_standardize,Keep source value and standardize spacing/hyphen style,Expected ordered age bands only,2019;2020;2022;2024;2025
+3. Gender,gender,rename_only,Keep raw text after trimming spaces,Blank stays blank,2019;2020;2022;2024;2025
+4. Language,language,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+5. Belonging,belonging,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+6. Cultural activities,cultural_activities,text_or_numeric,"No->0; Once or twice->30; Many times->50; numeric values kept",Later-year text categories mapped,2019;2020;2022;2024;2025
+7. Te Reo,te_reo,text_or_numeric,"Very poorly/Very poorly, if at all->0; Moderate/Moderate ability->50; Very well->80; Fluent speaker->90; numeric values kept",Supports alternate spellings in text labels,2019;2020;2022;2024;2025
+8. Cultural knowledge,cultural_knowledge,text_or_numeric,"None->0; Once or twice->30; Many times->50; numeric values kept",Later-year text categories mapped,2019;2020;2022;2024;2025
+9. Trust NZ government,trust_nz_government,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+10. Trust local council,trust_local_council,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+11. Trust NZ Police,trust_nz_police,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+12. Safety,safety,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+13. Discrimination,discrimination,text_or_numeric,"None->0; Once or twice->30; Many times->50; numeric values kept",Direction intentionally not reversed,2019;2020;2022;2024;2025
+14. Loneliness,loneliness,text_or_numeric,"Not once->0; Occasionally->50; Frequently->80; Very frequently->90; numeric values kept",Direction intentionally not reversed,2019;2020;2022;2024;2025
+15. Independence,independence,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+16. Support in crisis,support_in_crisis,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+17. Level of control,level_of_control,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+18. Volunteering time,volunteering_time,text_or_numeric,"Not at all->0; Occasionally->50; Frequently->80; Very frequently->90; numeric values kept",Later-year text categories mapped,2019;2020;2022;2024;2025
+19. Paid working hours,paid_working_hours,interval_to_representative,"Numeric values kept; category mapping such as 1 to 20->20, 21-30->25, 31-40->35, 41-50->45, 51-60->55",Special cases include Jan-20->20 and >60 capped at 60,2019;2020;2022;2024;2025
+20. Job Satisfaction,job_satisfaction,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+21. Work life Balance,work_life_balance,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+22. Leisure time,leisure_time,interval_to_representative,Convert interval-like responses to representative values and keep numeric values,Uses same interval logic as work_travel_time in current script,2019;2020;2022;2024;2025
+23. Be Yourself in NZ,be_yourself_in_nz,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+24. Be Yourself in Newlands,be_yourself_in_newlands,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+25. Life Satisfaction,life_satisfaction,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+26. Meaning and Purpose,meaning_and_purpose,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+27. Family Wellbeing,family_wellbeing,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+28. Access to Natural Environment,access_to_natural_environment,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+29. Work Travel Time,work_travel_time,interval_to_representative,"Numeric values kept; category mapping such as 0-20->20, 21-30->25, 31-40->35, 41-50->45, 51-60->55, 60+->60",Text variants normalized before mapping,2019;2020;2022;2024;2025
+30. Basic Life Skills,basic_life_skills,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+31. Newlands Resident,newlands_resident,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+32. Home Disaster Ready,home_disaster_ready,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+33. Neigbourhood Support Group,neighbourhood_support_group,yes_no_standardize,Standardize yes/no capitalization,Source spelling differs from final column spelling,2019;2020;2022;2024;2025
+34. Out of Newlands During Day,out_of_newlands_during_day,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+35. Place out of Newland Disaster Ready,place_out_of_newlands_disaster_ready,yes_no_standardize,Standardize yes/no capitalization,Source spelling differs from final column spelling,2019;2020;2022;2024;2025
+38. Satisfaction income,satisfaction_income,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+39. Confident in finding a new job,confident_in_finding_a_new_job,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+40. Personal mental health,personal_mental_health,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+41. Confident water safety,confident_water_safety,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+42. Optimal use of land,optimal_use_of_land,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
+37. Vote Local elections 2019,vote_local_elections_2019,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+36. Vote General election 2020,vote_general_election_2020,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+45. Voted Local Elections 2022,voted_local_elections_2022,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025
+44. Voted General elections 2023,voted_general_elections_2023,yes_no_standardize,Standardize yes/no capitalization,Unexpected values kept as trimmed text,2019;2020;2022;2024;2025

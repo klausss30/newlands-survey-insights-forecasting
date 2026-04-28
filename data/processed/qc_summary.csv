@@ -30,17 +30,17 @@ family_wellbeing,integer,score,1055,48,4.55,69,0,100,100 | 10 | 65 | 80 | 60
 access_to_natural_environment,integer,score,1055,42,3.98,71,0,100,100 | 75 | 50 | 85 | 70
 work_travel_time,integer,derived_continuous,1055,86,8.15,54,0,60,15 | 10 | 50 | 40 | 30
 basic_life_skills,integer,score,1055,37,3.51,54,0,100,100 | 90 | 80 | 70 | 35
-newlands_resident,categorical,binary,1055,92,8.72,2,No,Yes,No | Yes
-home_disaster_ready,categorical,binary,1055,332,31.47,2,No,Yes,No | Yes
-neighbourhood_support_group,categorical,binary,1055,367,34.79,2,No,Yes,No | Yes
-out_of_newlands_during_day,categorical,binary,1055,407,38.58,2,No,Yes,Yes | No
-place_out_of_newlands_disaster_ready,categorical,binary,1055,564,53.46,2,No,Yes,Yes | No
+newlands_resident,integer,binary,1055,92,8.72,2,0,1,0 | 1
+home_disaster_ready,integer,binary,1055,332,31.47,2,0,1,0 | 1
+neighbourhood_support_group,integer,binary,1055,367,34.79,2,0,1,0 | 1
+out_of_newlands_during_day,integer,binary,1055,407,38.58,2,0,1,1 | 0
+place_out_of_newlands_disaster_ready,integer,binary,1055,564,53.46,2,0,1,1 | 0
 satisfaction_income,integer,score,1055,779,73.84,36,0,100,85 | 71 | 23 | 0 | 100
 confident_in_finding_a_new_job,integer,score,1055,752,71.28,37,0,100,50 | 100 | 23 | 0 | 73
 confident_water_safety,integer,score,1055,743,70.43,38,0,100,80 | 52 | 11 | 75 | 74
 optimal_use_of_land,integer,score,1055,742,70.33,39,0,100,80 | 21 | 10 | 25 | 42
 personal_mental_health,integer,score,1055,897,85.02,41,18,100,79 | 46 | 38 | 64 | 69
-vote_local_elections_2019,categorical,binary,1055,994,94.22,2,No,Yes,Yes | No
-vote_general_election_2020,categorical,binary,1055,993,94.12,2,No,Yes,Yes | No
-voted_local_elections_2022,categorical,binary,1055,796,75.45,2,No,Yes,Yes | No
-voted_general_elections_2023,categorical,binary,1055,797,75.55,2,No,Yes,Yes | No
+vote_local_elections_2019,integer,binary,1055,994,94.22,2,0,1,1 | 0
+vote_general_election_2020,integer,binary,1055,993,94.12,2,0,1,1 | 0
+voted_local_elections_2022,integer,binary,1055,796,75.45,2,0,1,1 | 0
+voted_general_elections_2023,integer,binary,1055,797,75.55,2,0,1,1 | 0

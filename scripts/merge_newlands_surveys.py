@@ -148,20 +148,20 @@ SCHEMA_DICT = {
     "access_to_natural_environment": {"field_type": "integer", "analysis_role": "score"},
     "work_travel_time": {"field_type": "integer", "analysis_role": "derived_continuous"},
     "basic_life_skills": {"field_type": "integer", "analysis_role": "score"},
-    "newlands_resident": {"field_type": "categorical", "analysis_role": "binary"},
-    "home_disaster_ready": {"field_type": "categorical", "analysis_role": "binary"},
-    "neighbourhood_support_group": {"field_type": "categorical", "analysis_role": "binary"},
-    "out_of_newlands_during_day": {"field_type": "categorical", "analysis_role": "binary"},
-    "place_out_of_newlands_disaster_ready": {"field_type": "categorical", "analysis_role": "binary"},
+    "newlands_resident": {"field_type": "integer", "analysis_role": "binary"},
+    "home_disaster_ready": {"field_type": "integer", "analysis_role": "binary"},
+    "neighbourhood_support_group": {"field_type": "integer", "analysis_role": "binary"},
+    "out_of_newlands_during_day": {"field_type": "integer", "analysis_role": "binary"},
+    "place_out_of_newlands_disaster_ready": {"field_type": "integer", "analysis_role": "binary"},
     "satisfaction_income": {"field_type": "integer", "analysis_role": "score"},
     "confident_in_finding_a_new_job": {"field_type": "integer", "analysis_role": "score"},
     "confident_water_safety": {"field_type": "integer", "analysis_role": "score"},
     "optimal_use_of_land": {"field_type": "integer", "analysis_role": "score"},
     "personal_mental_health": {"field_type": "integer", "analysis_role": "score"},
-    "vote_local_elections_2019": {"field_type": "categorical", "analysis_role": "binary"},
-    "vote_general_election_2020": {"field_type": "categorical", "analysis_role": "binary"},
-    "voted_local_elections_2022": {"field_type": "categorical", "analysis_role": "binary"},
-    "voted_general_elections_2023": {"field_type": "categorical", "analysis_role": "binary"},
+    "vote_local_elections_2019": {"field_type": "integer", "analysis_role": "binary"},
+    "vote_general_election_2020": {"field_type": "integer", "analysis_role": "binary"},
+    "voted_local_elections_2022": {"field_type": "integer", "analysis_role": "binary"},
+    "voted_general_elections_2023": {"field_type": "integer", "analysis_role": "binary"},
 }
 
 
@@ -341,15 +341,15 @@ def format_number(value: Optional[float]) -> str:
     return str(value)
 
 
-def normalize_yes_no(value: str) -> str:
+def encode_yes_no(value: str) -> str:
     value = clean_string(value).lower()
     if not value:
         return ""
     if value == "yes":
-        return "Yes"
+        return "1"
     if value == "no":
-        return "No"
-    return clean_string(value)
+        return "0"
+    raise ValueError(f"Unknown yes/no value: {value}")
 
 
 def normalize_interval_key(value: str) -> str:
@@ -432,7 +432,7 @@ def transform_value(column: str, value: str, year: int) -> str:
     if column in {"age_range", "gender"}:
         return clean_string(value)
     if column in YES_NO_COLUMNS:
-        return normalize_yes_no(value)
+        return encode_yes_no(value)
     if column == "paid_working_hours":
         return map_interval(value, cap=60)
     if column in {"work_travel_time", "leisure_time"}:

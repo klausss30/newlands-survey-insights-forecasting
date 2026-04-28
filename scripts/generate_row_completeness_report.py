@@ -24,6 +24,7 @@ PREVIEW_COLUMNS = [
     "age_range",
     "gender",
 ]
+# These fields identify demographic-only records for review before filtering.
 MINIMAL_FIELDS = set(PREVIEW_COLUMNS)
 
 
@@ -84,6 +85,7 @@ def main() -> None:
     for column in PREVIEW_COLUMNS:
         report_df[column] = df[column]
 
+    # Low-completeness rows are review candidates; the filtering script applies the final removal rule.
     report_df["low_completeness_flag"] = completeness_pct < (args.threshold * 100)
     non_blank_columns = non_blank_mask.apply(
         lambda row: {col for col, has_value in row.items() if has_value},

@@ -18,6 +18,7 @@ INPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready.csv"
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready_filtered.csv"
 REMOVED_ROWS_FILE = BASE_DIR / "data" / "processed" / "removed_incomplete_responses.csv"
 
+# Rows with only these fields are treated as incomplete because they have no substantive survey answers.
 MINIMAL_FIELDS = ["date", "postcode", "age_range", "gender"]
 
 
@@ -58,6 +59,7 @@ def main() -> None:
     non_blank_columns = non_blank_mask.apply(lambda row: {col for col, has_value in row.items() if has_value}, axis=1)
     minimal_set = set(MINIMAL_FIELDS)
 
+    # Keep fully blank rows out of this rule; only partially started demographic-only rows are removed.
     remove_mask = non_blank_columns.map(lambda cols: bool(cols) and cols.issubset(minimal_set))
 
     removed_df = df[remove_mask].copy()

@@ -192,6 +192,7 @@ SCORE_COLUMNS = {
 }
 
 
+# Text answers are mapped onto the shared 0-100 scale used for year-over-year analysis.
 TEXT_MAPPINGS = {
     "cultural_activities": {
         "no": 0,
@@ -231,6 +232,7 @@ TEXT_MAPPINGS = {
 }
 
 
+# Interval answers are converted to representative numeric values for continuous fields.
 INTERVAL_MAPPINGS = {
     "jan-20": 20,
     "1 to 20": 20,
@@ -383,6 +385,7 @@ def map_interval(value: str, cap: Optional[int] = None) -> str:
             else:
                 raise ValueError(f"Unknown interval value: {value}")
 
+    # Caps keep open-ended ranges comparable across years without overstating high values.
     if cap is not None:
         mapped = min(mapped, cap)
     return format_number(mapped)
@@ -408,6 +411,7 @@ def map_score_value(value: str, year: int) -> str:
     numeric = parse_number(value)
     if numeric is None:
         return ""
+    # The 2024 and 2025 surveys use 0-10 scales; earlier years already use 0-100.
     if year in {2024, 2025} and numeric <= 10:
         numeric *= 10
     return format_number(numeric)

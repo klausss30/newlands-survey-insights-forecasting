@@ -19,6 +19,7 @@ INPUT_FILE = BASE_DIR / "data" / "processed" / "merged_newlands_surveys_clean.cs
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready.csv"
 
 
+# Normalize age bands so grouping and sorting stay consistent across survey years.
 ORDERED_AGE_RANGES = {
     "15 - 18": "15-18",
     "15-18": "15-18",

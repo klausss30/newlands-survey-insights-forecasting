@@ -13,7 +13,7 @@ except ImportError as exc:
 from merge_newlands_surveys import FINAL_COLUMNS, SCHEMA_DICT
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parents[2]
 INPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready_filtered.csv"
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "qc_summary.csv"
 

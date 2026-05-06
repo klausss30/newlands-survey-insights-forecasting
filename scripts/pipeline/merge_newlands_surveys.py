@@ -14,7 +14,7 @@ except ImportError as exc:
     ) from exc
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parents[2]
 RAW_DIR = BASE_DIR / "data" / "raw"
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "merged_newlands_surveys_clean.csv"
 

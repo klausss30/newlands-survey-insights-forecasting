@@ -6,8 +6,8 @@ import sys
 from pathlib import Path
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-SCRIPTS_DIR = BASE_DIR / "scripts"
+BASE_DIR = Path(__file__).resolve().parents[2]
+SCRIPTS_DIR = Path(__file__).resolve().parent
 
 
 PIPELINE_STEPS = [

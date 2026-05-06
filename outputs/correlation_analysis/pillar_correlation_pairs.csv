@@ -1,0 +1,161 @@
+﻿pillar_id,pillar_name,metric_1,metric_1_label,metric_1_type,metric_1_direction,metric_2,metric_2_label,metric_2_type,metric_2_direction,valid_n,pearson_corr,spearman_corr,relationship_strength,highlight_flag,low_pair_n_flag,abs_spearman_corr
+1,Economic,job_satisfaction,Job satisfaction,score,Higher=more positive,satisfaction_income,Income satisfaction,score,Higher=more positive,271,0.4479,0.4411,moderate,True,False,0.4411
+1,Economic,job_satisfaction,Job satisfaction,score,Higher=more positive,confident_in_finding_a_new_job,Confidence in finding a new job,score,Higher=more positive,269,0.4648,0.4189,moderate,True,False,0.4189
+1,Economic,satisfaction_income,Income satisfaction,score,Higher=more positive,confident_in_finding_a_new_job,Confidence in finding a new job,score,Higher=more positive,274,0.3855,0.3661,weak,False,False,0.3661
+1,Economic,basic_life_skills,Basic life skills,score,Higher=more positive,satisfaction_income,Income satisfaction,score,Higher=more positive,273,0.2154,0.2467,weak,False,False,0.2467
+1,Economic,paid_working_hours,Paid working hours,derived_continuous,Higher=more hours,satisfaction_income,Income satisfaction,score,Higher=more positive,274,0.281,0.2253,weak,False,False,0.2253
+1,Economic,job_satisfaction,Job satisfaction,score,Higher=more positive,basic_life_skills,Basic life skills,score,Higher=more positive,916,0.2034,0.2236,weak,False,False,0.2236
+1,Economic,paid_working_hours,Paid working hours,derived_continuous,Higher=more hours,confident_in_finding_a_new_job,Confidence in finding a new job,score,Higher=more positive,301,0.1823,0.2063,weak,False,False,0.2063
+1,Economic,basic_life_skills,Basic life skills,score,Higher=more positive,confident_in_finding_a_new_job,Confidence in finding a new job,score,Higher=more positive,300,0.1784,0.1878,very weak,False,False,0.1878
+1,Economic,paid_working_hours,Paid working hours,derived_continuous,Higher=more hours,work_travel_time,Work travel time,derived_continuous,Higher=more travel time,958,0.1925,0.1856,very weak,False,False,0.1856
+1,Economic,paid_working_hours,Paid working hours,derived_continuous,Higher=more hours,job_satisfaction,Job satisfaction,score,Higher=more positive,934,0.1864,0.1218,very weak,False,False,0.1218
+1,Economic,work_travel_time,Work travel time,derived_continuous,Higher=more travel time,confident_in_finding_a_new_job,Confidence in finding a new job,score,Higher=more positive,300,-0.0273,-0.0678,very weak,False,False,0.0678
+1,Economic,work_travel_time,Work travel time,derived_continuous,Higher=more travel time,satisfaction_income,Income satisfaction,score,Higher=more positive,273,0.0434,0.0601,very weak,False,False,0.0601
+1,Economic,job_satisfaction,Job satisfaction,score,Higher=more positive,work_travel_time,Work travel time,derived_continuous,Higher=more travel time,910,-0.0245,-0.0506,very weak,False,False,0.0506
+1,Economic,paid_working_hours,Paid working hours,derived_continuous,Higher=more hours,basic_life_skills,Basic life skills,score,Higher=more positive,1003,0.0537,0.0378,very weak,False,False,0.0378
+1,Economic,work_travel_time,Work travel time,derived_continuous,Higher=more travel time,basic_life_skills,Basic life skills,score,Higher=more positive,964,-0.004,-0.0161,very weak,False,False,0.0161
+2,Environment,confident_water_safety,Confidence in water safety,score,Higher=more positive,optimal_use_of_land,Optimal use of land,score,Higher=more positive,312,0.5138,0.4996,moderate,True,False,0.4996
+2,Environment,access_to_natural_environment,Access to natural environment,score,Higher=more positive,confident_water_safety,Confidence in water safety,score,Higher=more positive,311,0.4154,0.4235,moderate,True,False,0.4235
+2,Environment,access_to_natural_environment,Access to natural environment,score,Higher=more positive,optimal_use_of_land,Optimal use of land,score,Higher=more positive,312,0.3104,0.3155,weak,False,False,0.3155
+3,Social,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,1002,0.7738,0.8239,strong,True,False,0.8239
+3,Social,life_satisfaction,Life satisfaction,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.6942,0.7217,strong,True,False,0.7217
+3,Social,life_satisfaction,Life satisfaction,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,853,0.6726,0.671,moderate,True,False,0.671
+3,Social,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.6438,0.6446,moderate,True,False,0.6446
+3,Social,level_of_control,Level of control,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,156,0.5963,0.611,moderate,True,False,0.611
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,146,0.5289,0.5299,moderate,True,False,0.5299
+3,Social,family_wellbeing,Family wellbeing,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.478,0.516,moderate,True,False,0.516
+3,Social,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1007,0.4688,0.5057,moderate,True,False,0.5057
+3,Social,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,847,0.4735,0.4966,moderate,True,False,0.4966
+3,Social,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1012,0.4743,0.489,moderate,True,False,0.489
+3,Social,independence,Independence,score,Higher=more positive,level_of_control,Level of control,score,Higher=more positive,1021,0.4519,0.4718,moderate,True,False,0.4718
+3,Social,level_of_control,Level of control,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1006,0.4483,0.4529,moderate,True,False,0.4529
+3,Social,life_satisfaction,Life satisfaction,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,1004,0.4331,0.446,moderate,True,False,0.446
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,949,0.4358,0.4456,moderate,True,False,0.4456
+3,Social,level_of_control,Level of control,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,998,0.4185,0.4361,moderate,True,False,0.4361
+3,Social,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,851,0.3874,0.4194,moderate,True,False,0.4194
+3,Social,level_of_control,Level of control,score,Higher=more positive,work_life_balance,Work-life balance,score,Higher=more positive,966,0.4046,0.3971,weak,False,False,0.3971
+3,Social,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,845,0.3538,0.3915,weak,False,False,0.3915
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,level_of_control,Level of control,score,Higher=more positive,1026,0.3839,0.3898,weak,False,False,0.3898
+3,Social,level_of_control,Level of control,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,998,0.3517,0.3792,weak,False,False,0.3792
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,849,0.3721,0.3751,weak,False,False,0.3751
+3,Social,level_of_control,Level of control,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,849,0.3961,0.369,weak,False,False,0.369
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1006,0.349,0.3674,weak,False,False,0.3674
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,802,0.3656,0.3623,weak,False,False,0.3623
+3,Social,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.2956,0.3534,weak,False,False,0.3534
+3,Social,independence,Independence,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,157,0.2771,0.3482,weak,False,False,0.3482
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,939,0.3229,0.3426,weak,False,False,0.3426
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,1000,0.2959,0.3425,weak,False,False,0.3425
+3,Social,level_of_control,Level of control,score,Higher=more positive,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1006,0.3142,0.3422,weak,False,False,0.3422
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,940,0.3061,0.3334,weak,False,False,0.3334
+3,Social,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.2925,0.3295,weak,False,False,0.3295
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,1000,0.2909,0.318,weak,False,False,0.318
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,949,0.3067,0.3121,weak,False,False,0.3121
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,personal_mental_health,Personal mental health,score,Higher=more positive,154,0.2903,0.3016,weak,False,False,0.3016
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,family_wellbeing,Family wellbeing,score,Higher=more positive,998,0.2132,0.2995,weak,False,False,0.2995
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,845,0.2422,0.2922,weak,False,False,0.2922
+3,Social,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,998,0.2318,0.2857,weak,False,False,0.2857
+3,Social,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,1002,0.2338,0.2843,weak,False,False,0.2843
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,157,0.2211,0.2758,weak,False,False,0.2758
+3,Social,independence,Independence,score,Higher=more positive,support_in_crisis,Support in crisis,score,Higher=more positive,1025,0.2694,0.2743,weak,False,False,0.2743
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,997,-0.2487,-0.2725,weak,False,False,0.2725
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1005,-0.268,-0.2673,weak,False,False,0.2673
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1006,0.2224,0.2627,weak,False,False,0.2627
+3,Social,independence,Independence,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,995,0.2702,0.2592,weak,False,False,0.2592
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,work_life_balance,Work-life balance,score,Higher=more positive,964,0.2593,0.2498,weak,False,False,0.2498
+3,Social,independence,Independence,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,995,0.1842,0.2482,weak,False,False,0.2482
+3,Social,work_life_balance,Work-life balance,score,Higher=more positive,leisure_time,Leisure time,derived_continuous,Higher=more time,960,0.244,0.2376,weak,False,False,0.2376
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,support_in_crisis,Support in crisis,score,Higher=more positive,1025,0.158,0.231,weak,False,False,0.231
+3,Social,independence,Independence,score,Higher=more positive,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1003,0.2576,0.23,weak,False,False,0.23
+3,Social,independence,Independence,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1003,0.2616,0.2255,weak,False,False,0.2255
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,life_satisfaction,Life satisfaction,score,Higher=more positive,1005,-0.2477,-0.2237,weak,False,False,0.2237
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,level_of_control,Level of control,score,Higher=more positive,1018,-0.1685,-0.2166,weak,False,False,0.2166
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,work_life_balance,Work-life balance,score,Higher=more positive,959,-0.2061,-0.2001,weak,False,False,0.2001
+3,Social,independence,Independence,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,844,0.1684,0.1985,very weak,False,False,0.1985
+3,Social,independence,Independence,score,Higher=more positive,work_life_balance,Work-life balance,score,Higher=more positive,961,0.1863,0.1936,very weak,False,False,0.1936
+3,Social,level_of_control,Level of control,score,Higher=more positive,leisure_time,Leisure time,derived_continuous,Higher=more time,1013,0.1564,0.1802,very weak,False,False,0.1802
+3,Social,safety,Safety,score,Higher=more positive,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,1002,0.1845,0.1786,very weak,False,False,0.1786
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,personal_mental_health,Personal mental health,score,Higher=more positive,157,0.1783,0.1737,very weak,False,False,0.1737
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,848,0.1773,0.1705,very weak,False,False,0.1705
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,997,0.1728,0.1665,very weak,False,False,0.1665
+3,Social,safety,Safety,score,Higher=more positive,support_in_crisis,Support in crisis,score,Higher=more positive,1026,0.1644,0.1632,very weak,False,False,0.1632
+3,Social,safety,Safety,score,Higher=more positive,level_of_control,Level of control,score,Higher=more positive,1022,0.1889,0.1582,very weak,False,False,0.1582
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,987,0.1603,0.1578,very weak,False,False,0.1578
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,volunteering_time,Volunteering time,score,Higher=more volunteering,1025,0.172,0.1577,very weak,False,False,0.1577
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,volunteering_time,Volunteering time,score,Higher=more volunteering,1024,0.144,0.1576,very weak,False,False,0.1576
+3,Social,safety,Safety,score,Higher=more positive,life_satisfaction,Life satisfaction,score,Higher=more positive,1010,0.1442,0.1494,very weak,False,False,0.1494
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,life_satisfaction,Life satisfaction,score,Higher=more positive,1006,0.0912,0.1472,very weak,False,False,0.1472
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,independence,Independence,score,Higher=more positive,1019,-0.1359,-0.1467,very weak,False,False,0.1467
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,life_satisfaction,Life satisfaction,score,Higher=more positive,997,0.1389,0.1414,very weak,False,False,0.1414
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,family_wellbeing,Family wellbeing,score,Higher=more positive,989,0.1358,0.1375,very weak,False,False,0.1375
+3,Social,safety,Safety,score,Higher=more positive,work_life_balance,Work-life balance,score,Higher=more positive,964,0.1649,0.1315,very weak,False,False,0.1315
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1006,0.0368,0.1269,very weak,False,False,0.1269
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,work_life_balance,Work-life balance,score,Higher=more positive,965,0.1186,0.1263,very weak,False,False,0.1263
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,independence,Independence,score,Higher=more positive,1022,0.059,0.1144,very weak,False,False,0.1144
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,level_of_control,Level of control,score,Higher=more positive,1021,0.048,0.113,very weak,False,False,0.113
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,personal_mental_health,Personal mental health,score,Higher=more positive,154,-0.101,-0.1117,very weak,False,False,0.1117
+3,Social,safety,Safety,score,Higher=more positive,independence,Independence,score,Higher=more positive,1023,0.1389,0.1095,very weak,False,False,0.1095
+3,Social,safety,Safety,score,Higher=more positive,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,849,0.1178,0.1057,very weak,False,False,0.1057
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,family_wellbeing,Family wellbeing,score,Higher=more positive,997,-0.1126,-0.1036,very weak,False,False,0.1036
+3,Social,safety,Safety,score,Higher=more positive,family_wellbeing,Family wellbeing,score,Higher=more positive,1002,0.1185,0.103,very weak,False,False,0.103
+3,Social,support_in_crisis,Support in crisis,score,Higher=more positive,leisure_time,Leisure time,derived_continuous,Higher=more time,1013,0.0911,0.1025,very weak,False,False,0.1025
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,support_in_crisis,Support in crisis,score,Higher=more positive,1022,-0.0879,-0.1007,very weak,False,False,0.1007
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,family_wellbeing,Family wellbeing,score,Higher=more positive,999,0.0968,0.0987,very weak,False,False,0.0987
+3,Social,safety,Safety,score,Higher=more positive,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1010,0.0824,0.0902,very weak,False,False,0.0902
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,volunteering_time,Volunteering time,score,Higher=more volunteering,1021,0.0774,0.0861,very weak,False,False,0.0861
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,846,-0.1066,-0.0853,very weak,False,False,0.0853
+3,Social,safety,Safety,score,Higher=more positive,leisure_time,Leisure time,derived_continuous,Higher=more time,1012,0.0996,0.0835,very weak,False,False,0.0835
+3,Social,safety,Safety,score,Higher=more positive,loneliness,Loneliness,score,Higher=more severe/problematic,1026,0.0639,0.0792,very weak,False,False,0.0792
+3,Social,leisure_time,Leisure time,derived_continuous,Higher=more time,meaning_and_purpose,Meaning and purpose,score,Higher=more positive,841,0.0892,0.0791,very weak,False,False,0.0791
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,leisure_time,Leisure time,derived_continuous,Higher=more time,1010,0.0622,0.0679,very weak,False,False,0.0679
+3,Social,level_of_control,Level of control,score,Higher=more positive,volunteering_time,Volunteering time,score,Higher=more volunteering,1025,0.0726,0.0655,very weak,False,False,0.0655
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,leisure_time,Leisure time,derived_continuous,Higher=more time,1008,-0.0676,-0.0587,very weak,False,False,0.0587
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,work_life_balance,Work-life balance,score,Higher=more positive,964,0.0111,0.0566,very weak,False,False,0.0566
+3,Social,independence,Independence,score,Higher=more positive,volunteering_time,Volunteering time,score,Higher=more volunteering,1022,0.0434,0.0564,very weak,False,False,0.0564
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,998,-0.0105,0.0556,very weak,False,False,0.0556
+3,Social,loneliness,Loneliness,score,Higher=more severe/problematic,personal_mental_health,Personal mental health,score,Higher=more positive,156,-0.0382,-0.054,very weak,False,False,0.054
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,leisure_time,Leisure time,derived_continuous,Higher=more time,1015,0.0595,0.052,very weak,False,False,0.052
+3,Social,safety,Safety,score,Higher=more positive,volunteering_time,Volunteering time,score,Higher=more volunteering,1025,0.0466,0.047,very weak,False,False,0.047
+3,Social,safety,Safety,score,Higher=more positive,discrimination,Discrimination,score,Higher=more severe/problematic,1034,-0.0704,-0.0393,very weak,False,False,0.0393
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,life_satisfaction,Life satisfaction,score,Higher=more positive,1009,0.0395,0.0386,very weak,False,False,0.0386
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,be_yourself_in_newlands,Be yourself in Newlands,score,Higher=more positive,1001,0.0245,0.0383,very weak,False,False,0.0383
+3,Social,volunteering_time,Volunteering time,score,Higher=more volunteering,be_yourself_in_nz,Be yourself in NZ,score,Higher=more positive,1009,0.0039,0.0334,very weak,False,False,0.0334
+3,Social,safety,Safety,score,Higher=more positive,personal_mental_health,Personal mental health,score,Higher=more positive,158,0.0492,0.0222,very weak,False,False,0.0222
+3,Social,independence,Independence,score,Higher=more positive,leisure_time,Leisure time,derived_continuous,Higher=more time,1010,0.0285,0.0148,very weak,False,False,0.0148
+3,Social,discrimination,Discrimination,score,Higher=more severe/problematic,loneliness,Loneliness,score,Higher=more severe/problematic,1021,0.0242,0.0083,very weak,False,False,0.0083
+4,Cultural,cultural_activities,Cultural activities,score,Higher=more positive,cultural_knowledge,Cultural knowledge,score,Higher=more positive,1034,0.4617,0.4559,moderate,True,False,0.4559
+4,Cultural,cultural_activities,Cultural activities,score,Higher=more positive,te_reo,Te Reo,score,Higher=more positive,1034,0.1851,0.282,weak,False,False,0.282
+4,Cultural,te_reo,Te Reo,score,Higher=more positive,cultural_knowledge,Cultural knowledge,score,Higher=more positive,1036,0.2348,0.2731,weak,False,False,0.2731
+4,Cultural,language,Language,score,Higher=more positive,belonging,Sense of belonging,score,Higher=more positive,1053,0.0325,0.17,very weak,False,False,0.17
+4,Cultural,belonging,Sense of belonging,score,Higher=more positive,cultural_activities,Cultural activities,score,Higher=more positive,1042,0.1343,0.0909,very weak,False,False,0.0909
+4,Cultural,language,Language,score,Higher=more positive,te_reo,Te Reo,score,Higher=more positive,1041,0.0091,-0.0728,very weak,False,False,0.0728
+4,Cultural,belonging,Sense of belonging,score,Higher=more positive,cultural_knowledge,Cultural knowledge,score,Higher=more positive,1044,0.083,0.0507,very weak,False,False,0.0507
+4,Cultural,belonging,Sense of belonging,score,Higher=more positive,te_reo,Te Reo,score,Higher=more positive,1043,0.1001,0.0396,very weak,False,False,0.0396
+4,Cultural,language,Language,score,Higher=more positive,cultural_knowledge,Cultural knowledge,score,Higher=more positive,1042,0.0561,0.0257,very weak,False,False,0.0257
+4,Cultural,language,Language,score,Higher=more positive,cultural_activities,Cultural activities,score,Higher=more positive,1040,0.0452,-0.0125,very weak,False,False,0.0125
+5,Governance,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,61,0.8501,0.8501,strong,True,False,0.8501
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,trust_local_council,Trust in local council,score,Higher=more positive,1028,0.5991,0.5746,moderate,True,False,0.5746
+5,Governance,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,258,0.5304,0.5304,moderate,True,False,0.5304
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,trust_nz_police,Trust in NZ Police,score,Higher=more positive,1028,0.3969,0.3563,weak,False,False,0.3563
+5,Governance,trust_local_council,Trust in local council,score,Higher=more positive,trust_nz_police,Trust in NZ Police,score,Higher=more positive,1021,0.3211,0.3091,weak,False,False,0.3091
+5,Governance,trust_local_council,Trust in local council,score,Higher=more positive,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,61,-0.174,-0.1629,very weak,False,False,0.1629
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,61,0.1456,0.1105,very weak,False,False,0.1105
+5,Governance,trust_local_council,Trust in local council,score,Higher=more positive,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,256,-0.0653,-0.0723,very weak,False,False,0.0723
+5,Governance,trust_nz_police,Trust in NZ Police,score,Higher=more positive,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,62,0.0633,0.055,very weak,False,False,0.055
+5,Governance,trust_local_council,Trust in local council,score,Higher=more positive,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,61,-0.0778,-0.0539,very weak,False,False,0.0539
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,257,-0.048,-0.0526,very weak,False,False,0.0526
+5,Governance,trust_nz_police,Trust in NZ Police,score,Higher=more positive,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,61,0.0597,0.0456,very weak,False,False,0.0456
+5,Governance,trust_nz_police,Trust in NZ Police,score,Higher=more positive,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,258,0.0247,0.0437,very weak,False,False,0.0437
+5,Governance,trust_local_council,Trust in local council,score,Higher=more positive,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,256,-0.0368,-0.0267,very weak,False,False,0.0267
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,256,-0.0217,-0.02,very weak,False,False,0.02
+5,Governance,trust_nz_police,Trust in NZ Police,score,Higher=more positive,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,257,-0.0111,-0.0189,very weak,False,False,0.0189
+5,Governance,trust_nz_government,Trust in NZ government,score,Higher=more positive,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,62,0.0201,-0.0061,very weak,False,False,0.0061
+5,Governance,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,0,,,not enough data,False,True,
+5,Governance,vote_local_elections_2019,Voted in local elections 2019,binary,Higher=Yes,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,0,,,not enough data,False,True,
+5,Governance,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,voted_local_elections_2022,Voted in local elections 2022,binary,Higher=Yes,0,,,not enough data,False,True,
+5,Governance,vote_general_election_2020,Voted in general election 2020,binary,Higher=Yes,voted_general_elections_2023,Voted in general elections 2023,binary,Higher=Yes,0,,,not enough data,False,True,
+6,Disaster,out_of_newlands_during_day,Out of Newlands during day,binary,Higher=Yes,place_out_of_newlands_disaster_ready,Place out of Newlands disaster ready,binary,Higher=Yes,483,0.3537,0.3537,weak,False,False,0.3537
+6,Disaster,home_disaster_ready,Home disaster ready,binary,Higher=Yes,place_out_of_newlands_disaster_ready,Place out of Newlands disaster ready,binary,Higher=Yes,481,0.3075,0.3075,weak,False,False,0.3075
+6,Disaster,home_disaster_ready,Home disaster ready,binary,Higher=Yes,neighbourhood_support_group,Neighbourhood support group,binary,Higher=Yes,669,0.2073,0.2073,weak,False,False,0.2073
+6,Disaster,neighbourhood_support_group,Neighbourhood support group,binary,Higher=Yes,place_out_of_newlands_disaster_ready,Place out of Newlands disaster ready,binary,Higher=Yes,485,0.1095,0.1095,very weak,False,False,0.1095
+6,Disaster,neighbourhood_support_group,Neighbourhood support group,binary,Higher=Yes,out_of_newlands_during_day,Out of Newlands during day,binary,Higher=Yes,640,0.0913,0.0913,very weak,False,False,0.0913
+6,Disaster,home_disaster_ready,Home disaster ready,binary,Higher=Yes,out_of_newlands_during_day,Out of Newlands during day,binary,Higher=Yes,634,-0.004,-0.004,very weak,False,False,0.004

@@ -13,7 +13,7 @@ except ImportError as exc:
 from merge_newlands_surveys import FINAL_COLUMNS
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parents[2]
 INPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready.csv"
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "newlands_analysis_ready_filtered.csv"
 REMOVED_ROWS_FILE = BASE_DIR / "data" / "processed" / "removed_incomplete_responses.csv"

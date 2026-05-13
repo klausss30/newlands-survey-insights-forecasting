@@ -30,8 +30,8 @@ The result is a reusable data layer that can support reporting, modelling, and f
 
 - Survey years: `2019`, `2020`, `2022`, `2024`, `2025`
 - Raw survey responses: `1073`
-- Final filtered responses: `609`
-- Removed incomplete responses: `464`
+- Final filtered responses: `1052`
+- Removed incomplete responses: `21`
 - Final analysis fields: `44`
 - Resilience areas: `6`
 
@@ -58,7 +58,7 @@ The pipeline:
 9. removes `postcode` from the analysis schema
 10. fills blank `gender` values as `Do not wish to state`
 11. removes rows with blank `age_range`
-12. applies year-specific row-completeness rules
+12. identifies and removes demographic-only incomplete responses
 13. saves removed incomplete rows for audit
 14. generates quality-control summaries
 
@@ -110,7 +110,7 @@ Examples of standardisation:
 
 ### Incomplete Response Handling
 
-Some rows only contained minimal demographic information or too many missing values for the relevant survey year. These rows were removed from the final analysis dataset.
+Some rows only contained minimal demographic information and no substantive survey answers. These rows were removed from the final analysis dataset.
 
 Rows were removed if `age_range` was blank. Rows were also treated as incomplete if they only contained values in:
 
@@ -118,16 +118,9 @@ Rows were removed if `age_range` was blank. Rows were also treated as incomplete
 - `age_range`
 - `gender`
 
-Additional row-completeness rules are applied by survey year:
-
-- `2019` and `2020`: count missing values through `place_out_of_newlands_disaster_ready`; remove rows with 3 or more missing values
-- `2022`: count missing values through `optimal_use_of_land`; remove rows with 3 or more missing values
-- `2024`: ignore `vote_general_election_2020`, `vote_local_elections_2019`, and `location`; remove rows with 3 or more missing values
-- `2025`: ignore `meaning_and_purpose`, `vote_general_election_2020`, `vote_local_elections_2019`, `personal_mental_health`, and `location`; remove rows with 3 or more missing values
-
 Removed rows are saved in `data/processed/removed_incomplete_responses.csv`.
 
-This reduced the dataset from `1073` rows to `609` final usable rows.
+This reduced the dataset from `1073` rows to `1052` final usable rows.
 
 ### Correlation Analysis
 

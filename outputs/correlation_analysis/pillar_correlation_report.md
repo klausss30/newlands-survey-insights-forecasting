@@ -17,15 +17,15 @@ Pairs with fewer than 30 valid paired responses are flagged as low sample size.
 Metrics in this pillar: 6
 
 Metrics with high missingness:
-- Income satisfaction: 61.41% missing
-- Confidence in finding a new job: 60.76% missing
+- Income satisfaction: 73.86% missing
+- Confidence in finding a new job: 71.29% missing
 
 Moderate and strong relationships:
-- Job satisfaction and Income satisfaction: Spearman 0.46, Pearson 0.48, valid n=233, moderate
-- Job satisfaction and Confidence in finding a new job: Spearman 0.43, Pearson 0.49, valid n=233, moderate
+- Job satisfaction and Income satisfaction: Spearman 0.44, Pearson 0.44, valid n=270, moderate
+- Job satisfaction and Confidence in finding a new job: Spearman 0.41, Pearson 0.46, valid n=268, moderate
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
-- Work travel time: average abs Spearman 0.07
+- Work travel time: average abs Spearman 0.08
 - Basic life skills: average abs Spearman 0.14
 - Paid working hours: average abs Spearman 0.16
 
@@ -34,16 +34,16 @@ Most independent metrics by average absolute within-pillar Spearman correlation:
 Metrics in this pillar: 3
 
 Metrics with high missingness:
-- Confidence in water safety: 60.92% missing
-- Optimal use of land: 60.76% missing
+- Confidence in water safety: 70.44% missing
+- Optimal use of land: 70.34% missing
 
 Moderate and strong relationships:
-- Confidence in water safety and Optimal use of land: Spearman 0.52, Pearson 0.54, valid n=238, moderate
-- Access to natural environment and Confidence in water safety: Spearman 0.41, Pearson 0.39, valid n=237, moderate
+- Confidence in water safety and Optimal use of land: Spearman 0.50, Pearson 0.51, valid n=311, moderate
+- Access to natural environment and Confidence in water safety: Spearman 0.42, Pearson 0.41, valid n=310, moderate
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
-- Access to natural environment: average abs Spearman 0.38
-- Optimal use of land: average abs Spearman 0.44
+- Access to natural environment: average abs Spearman 0.37
+- Optimal use of land: average abs Spearman 0.41
 - Confidence in water safety: average abs Spearman 0.46
 
 ## Social
@@ -51,24 +51,24 @@ Most independent metrics by average absolute within-pillar Spearman correlation:
 Metrics in this pillar: 15
 
 Metrics with high missingness:
-- Personal mental health: 80.13% missing
+- Personal mental health: 85.08% missing
 
 Moderate and strong relationships:
-- Be yourself in NZ and Be yourself in Newlands: Spearman 0.83, Pearson 0.79, valid n=605, strong
-- Life satisfaction and Personal mental health: Spearman 0.73, Pearson 0.70, valid n=121, strong
-- Life satisfaction and Meaning and purpose: Spearman 0.71, Pearson 0.72, valid n=489, strong
-- Meaning and purpose and Personal mental health: Spearman 0.64, Pearson 0.65, valid n=121, moderate
-- Level of control and Personal mental health: Spearman 0.57, Pearson 0.56, valid n=120, moderate
-- Work-life balance and Personal mental health: Spearman 0.53, Pearson 0.53, valid n=120, moderate
-- Family wellbeing and Personal mental health: Spearman 0.50, Pearson 0.45, valid n=121, moderate
-- Be yourself in Newlands and Life satisfaction: Spearman 0.50, Pearson 0.48, valid n=609, moderate
-- Independence and Level of control: Spearman 0.48, Pearson 0.48, valid n=604, moderate
-- Level of control and Life satisfaction: Spearman 0.48, Pearson 0.50, valid n=608, moderate
+- Be yourself in NZ and Be yourself in Newlands: Spearman 0.82, Pearson 0.77, valid n=999, strong
+- Life satisfaction and Personal mental health: Spearman 0.72, Pearson 0.70, valid n=157, strong
+- Life satisfaction and Meaning and purpose: Spearman 0.68, Pearson 0.68, valid n=850, moderate
+- Meaning and purpose and Personal mental health: Spearman 0.65, Pearson 0.64, valid n=157, moderate
+- Level of control and Personal mental health: Spearman 0.61, Pearson 0.60, valid n=155, moderate
+- Work-life balance and Personal mental health: Spearman 0.53, Pearson 0.53, valid n=145, moderate
+- Family wellbeing and Personal mental health: Spearman 0.52, Pearson 0.48, valid n=157, moderate
+- Be yourself in Newlands and Life satisfaction: Spearman 0.50, Pearson 0.47, valid n=1004, moderate
+- Meaning and purpose and Family wellbeing: Spearman 0.49, Pearson 0.47, valid n=844, moderate
+- Be yourself in NZ and Life satisfaction: Spearman 0.49, Pearson 0.47, valid n=1009, moderate
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
-- Volunteering time: average abs Spearman 0.10
-- Loneliness: average abs Spearman 0.11
-- Safety: average abs Spearman 0.12
+- Volunteering time: average abs Spearman 0.09
+- Safety: average abs Spearman 0.10
+- Leisure time: average abs Spearman 0.13
 
 Direction notes:
 - Discrimination should be interpreted carefully: Higher=more severe/problematic.
@@ -81,42 +81,43 @@ Metrics in this pillar: 5
 No metrics in this pillar have missingness above 50%.
 
 Moderate and strong relationships:
-- Cultural activities and Cultural knowledge: Spearman 0.44, Pearson 0.47, valid n=602, moderate
+- Cultural activities and Cultural knowledge: Spearman 0.46, Pearson 0.47, valid n=1031, moderate
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
-- Language: average abs Spearman 0.09
-- Sense of belonging: average abs Spearman 0.11
-- Te Reo: average abs Spearman 0.19
+- Language: average abs Spearman 0.07
+- Sense of belonging: average abs Spearman 0.09
+- Te Reo: average abs Spearman 0.17
 
 ## Governance
 
 Metrics in this pillar: 7
 
 Metrics with high missingness:
-- Voted in local elections 2019: 91.63% missing
-- Voted in general election 2020: 91.63% missing
-- Voted in local elections 2022: 69.13% missing
-- Voted in general elections 2023: 69.13% missing
+- Voted in local elections 2019: 94.20% missing
+- Voted in general election 2020: 94.11% missing
+- Voted in general elections 2023: 75.57% missing
+- Voted in local elections 2022: 75.48% missing
 
 Moderate and strong relationships:
-- Voted in local elections 2019 and Voted in general election 2020: Spearman 0.88, Pearson 0.88, valid n=51, strong
-- Trust in NZ government and Trust in local council: Spearman 0.62, Pearson 0.63, valid n=604, moderate
-- Voted in local elections 2022 and Voted in general elections 2023: Spearman 0.45, Pearson 0.45, valid n=188, moderate
+- Voted in local elections 2019 and Voted in general election 2020: Spearman 0.85, Pearson 0.85, valid n=61, strong
+- Trust in NZ government and Trust in local council: Spearman 0.57, Pearson 0.60, valid n=1025, moderate
+- Voted in local elections 2022 and Voted in general elections 2023: Spearman 0.54, Pearson 0.54, valid n=257, moderate
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
-- Trust in NZ Police: average abs Spearman 0.12
-- Voted in local elections 2022: average abs Spearman 0.13
-- Voted in general elections 2023: average abs Spearman 0.14
+- Trust in NZ Police: average abs Spearman 0.14
+- Voted in general elections 2023: average abs Spearman 0.16
+- Voted in local elections 2022: average abs Spearman 0.17
 
 ## Disaster
 
 Metrics in this pillar: 4
 
-No metrics in this pillar have missingness above 50%.
+Metrics with high missingness:
+- Place out of Newlands disaster ready: 53.33% missing
 
 No moderate or strong relationships met the valid sample threshold.
 
 Most independent metrics by average absolute within-pillar Spearman correlation:
 - Neighbourhood support group: average abs Spearman 0.14
-- Out of Newlands during day: average abs Spearman 0.17
-- Home disaster ready: average abs Spearman 0.18
+- Out of Newlands during day: average abs Spearman 0.15
+- Home disaster ready: average abs Spearman 0.17

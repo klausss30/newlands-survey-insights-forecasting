@@ -20,7 +20,6 @@ LOW_COMPLETENESS_OUTPUT = BASE_DIR / "data" / "processed" / "low_completeness_ca
 
 PREVIEW_COLUMNS = [
     "date",
-    "postcode",
     "age_range",
     "gender",
 ]

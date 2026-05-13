@@ -20,7 +20,6 @@ OUTPUT_FILE = BASE_DIR / "data" / "processed" / "merged_newlands_surveys_clean.c
 
 
 SOURCE_TO_FINAL = {
-    "1_postcode": "postcode",
     "2_age_range": "age_range",
     "3_gender": "gender",
     "4_language": "language",
@@ -69,7 +68,6 @@ SOURCE_TO_FINAL = {
 
 FINAL_COLUMNS = [
     "date",
-    "postcode",
     "age_range",
     "gender",
     "language",
@@ -118,7 +116,6 @@ FINAL_COLUMNS = [
 
 SCHEMA_DICT = {
     "date": {"field_type": "date", "analysis_role": "time"},
-    "postcode": {"field_type": "integer", "analysis_role": "identifier_grouping"},
     "age_range": {"field_type": "ordered_categorical", "analysis_role": "demographic"},
     "gender": {"field_type": "categorical", "analysis_role": "demographic"},
     "language": {"field_type": "integer", "analysis_role": "score"},
@@ -417,18 +414,9 @@ def map_score_value(value: str, year: int) -> str:
     return format_number(numeric)
 
 
-def map_postcode(value: str) -> str:
-    numeric = parse_number(value)
-    if numeric is None:
-        return ""
-    return format_number(numeric)
-
-
 def transform_value(column: str, value: str, year: int) -> str:
     if column == "date":
         return parse_date(value)
-    if column == "postcode":
-        return map_postcode(value)
     if column in {"age_range", "gender"}:
         return clean_string(value)
     if column in YES_NO_COLUMNS:

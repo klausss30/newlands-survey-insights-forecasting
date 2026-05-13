@@ -1,8 +1,7 @@
 source_column,final_column,mapping_type,rule_summary,special_cases,years_affected
 Timestamp,date,date_parse,Parse raw Timestamp and output DD/MM/YYYY,Supports multiple timestamp formats,2019;2020;2022;2024;2025
-1. Postcode,postcode,rename_and_cast,Convert postcode to integer,Blank stays blank,2019;2020;2022;2024;2025
-2. Age range,age_range,rename_and_standardize,Keep source value and standardize spacing/hyphen style,Expected ordered age bands only,2019;2020;2022;2024;2025
-3. Gender,gender,rename_only,Keep raw text after trimming spaces,Blank stays blank,2019;2020;2022;2024;2025
+2. Age range,age_range,rename_standardize_and_filter,Keep source value and standardize spacing/hyphen style,Rows with blank age_range are removed,2019;2020;2022;2024;2025
+3. Gender,gender,rename_and_impute,Keep raw text after trimming spaces,Blank values become Do not wish to state,2019;2020;2022;2024;2025
 4. Language,language,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
 5. Belonging,belonging,scale_numeric,Keep 0-100 values; multiply 0-10 by 10 in 2024/2025,Blank stays blank,2019;2020;2022;2024;2025
 6. Cultural activities,cultural_activities,text_or_numeric,"No->0; Once or twice->30; Many times->50; numeric values kept",Later-year text categories mapped,2019;2020;2022;2024;2025

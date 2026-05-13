@@ -30,9 +30,9 @@ The result is a reusable data layer that can support reporting, modelling, and f
 
 - Survey years: `2019`, `2020`, `2022`, `2024`, `2025`
 - Raw survey responses: `1073`
-- Final filtered responses: `1055`
-- Removed incomplete responses: `18`
-- Final analysis fields: `45`
+- Final filtered responses: `609`
+- Removed incomplete responses: `464`
+- Final analysis fields: `44`
 - Resilience areas: `6`
 
 The final filtered dataset is:
@@ -55,8 +55,12 @@ The pipeline:
 6. maps text responses into numeric values where appropriate
 7. converts interval-style answers into representative numeric values
 8. encodes yes/no fields as binary values
-9. identifies and removes demographic-only incomplete responses
-10. generates quality-control summaries
+9. removes `postcode` from the analysis schema
+10. fills blank `gender` values as `Do not wish to state`
+11. removes rows with blank `age_range`
+12. applies year-specific row-completeness rules
+13. saves removed incomplete rows for audit
+14. generates quality-control summaries
 
 ### 2. Power BI Model Tables
 
@@ -101,19 +105,29 @@ Examples of standardisation:
 - interval answers such as `21 - 30`, `31 - 40`, and `50+ hours` were converted into representative numeric values
 - yes/no responses were encoded as `1` and `0`
 - age bands were standardised into consistent ordered categories
+- blank gender values were standardised to `Do not wish to state`
+- `postcode` was removed from the analysis-ready schema
 
 ### Incomplete Response Handling
 
-Some rows only contained minimal demographic information and no substantive survey answers. These rows were removed from the final analysis dataset.
+Some rows only contained minimal demographic information or too many missing values for the relevant survey year. These rows were removed from the final analysis dataset.
 
-Rows were treated as incomplete if they only contained values in:
+Rows were removed if `age_range` was blank. Rows were also treated as incomplete if they only contained values in:
 
 - `date`
-- `postcode`
 - `age_range`
 - `gender`
 
-This reduced the dataset from `1073` rows to `1055` final usable rows.
+Additional row-completeness rules are applied by survey year:
+
+- `2019` and `2020`: count missing values through `place_out_of_newlands_disaster_ready`; remove rows with 3 or more missing values
+- `2022`: count missing values through `optimal_use_of_land`; remove rows with 3 or more missing values
+- `2024`: ignore `vote_general_election_2020`, `vote_local_elections_2019`, and `location`; remove rows with 3 or more missing values
+- `2025`: ignore `meaning_and_purpose`, `vote_general_election_2020`, `vote_local_elections_2019`, `personal_mental_health`, and `location`; remove rows with 3 or more missing values
+
+Removed rows are saved in `data/processed/removed_incomplete_responses.csv`.
+
+This reduced the dataset from `1073` rows to `609` final usable rows.
 
 ### Correlation Analysis
 
@@ -232,6 +246,7 @@ The correlation output folder also includes heatmaps for each resilience area.
 │   │   └── fact_survey_scores_long.csv
 │   ├── processed
 │   │   ├── newlands_analysis_ready_filtered.csv
+│   │   ├── removed_incomplete_responses.csv
 │   │   └── qc_summary.csv
 │   └── raw
 │       ├── 2019 - Newlands Survey - prep.csv
@@ -321,4 +336,3 @@ Possible next steps include:
 - Some metrics only appear in later survey years.
 - Some variables have high missingness and should be used carefully.
 - A future road impact model would need additional assumptions or external data, such as road location, affected areas, travel patterns, and before/after timing.
-

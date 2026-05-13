@@ -8,3 +8,4 @@ __pycache__/
 data/processed/*
 !data/processed/newlands_analysis_ready_filtered.csv
 !data/processed/qc_summary.csv
+!data/processed/removed_incomplete_responses.csv

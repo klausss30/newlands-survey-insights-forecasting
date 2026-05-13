@@ -68,6 +68,13 @@ def cast_categorical(value: str) -> str:
     return value
 
 
+def cast_gender(value: str) -> str:
+    value = clean_string(value)
+    if not value:
+        return "Do not wish to state"
+    return cast_categorical(value)
+
+
 def cast_ordered_categorical(column: str, value: str) -> str:
     value = clean_string(value)
     if not value:
@@ -82,6 +89,8 @@ def cast_value(column: str, value: str) -> str:
 
     if field_type == "date":
         return cast_date(value)
+    if column == "gender":
+        return cast_gender(value)
     if field_type == "integer":
         return cast_integer(value)
     if field_type == "categorical":

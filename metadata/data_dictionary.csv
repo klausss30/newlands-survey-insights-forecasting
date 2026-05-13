@@ -1,8 +1,7 @@
 final_column,description,field_type,analysis_role,allowed_values,direction,note
 date,Survey response date derived from Timestamp,date,time,DD/MM/YYYY,NA,Extracted from raw Timestamp
-postcode,Respondent postcode,integer,identifier_grouping,4-digit postcode,NA,Stored as integer
 age_range,Respondent age band,ordered_categorical,demographic,"15-18;18-24;25-34;35-44;45-54;55-64;65-74;75-84;85+",NA,Standardized age-band formatting
-gender,Respondent gender,categorical,demographic,Raw text values,NA,Retained from source
+gender,Respondent gender,categorical,demographic,Raw text values plus Do not wish to state,NA,Blank values are set to Do not wish to state
 language,Language score,integer,score,0-100,Higher=more positive,2024/2025 0-10 values scaled to 0-100
 belonging,Sense of belonging score,integer,score,0-100,Higher=more positive,2024/2025 0-10 values scaled to 0-100
 cultural_activities,Cultural activities score,integer,score,0-100,Higher=more positive,"Text mapping used for No/Once or twice/Many times"

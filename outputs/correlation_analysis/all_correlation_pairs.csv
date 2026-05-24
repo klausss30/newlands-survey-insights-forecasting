@@ -1,0 +1,821 @@
+var_a,var_b,pillar_a,pillar_b,same_pillar,spearman_rho,p_value,valid_n,strength,low_n_flag,high_missing_flag
+language,belonging,Cultural,Cultural,True,0.1715,0.0,1050,very weak,False,False
+language,cultural_activities,Cultural,Cultural,True,-0.014,0.6529,1037,very weak,False,False
+language,te_reo,Cultural,Cultural,True,-0.0738,0.0173,1038,very weak,False,False
+language,cultural_knowledge,Cultural,Cultural,True,0.028,0.3679,1039,very weak,False,False
+language,trust_nz_government,Cultural,Governance,False,0.0203,0.5151,1034,very weak,False,False
+language,trust_local_council,Cultural,Governance,False,0.009,0.7745,1026,very weak,False,False
+language,trust_nz_police,Cultural,Governance,False,0.1431,0.0,1033,very weak,False,False
+language,safety,Cultural,Social,False,0.0101,0.7451,1040,very weak,False,False
+language,discrimination,Cultural,Social,False,-0.1359,0.0,1034,very weak,False,False
+language,loneliness,Cultural,Social,False,0.0462,0.1392,1026,very weak,False,False
+language,independence,Cultural,Social,False,0.1595,0.0,1023,very weak,False,False
+language,support_in_crisis,Cultural,Social,False,0.1553,0.0,1026,very weak,False,False
+language,level_of_control,Cultural,Social,False,0.1243,0.0001,1024,very weak,False,False
+language,volunteering_time,Cultural,Social,False,0.0303,0.3313,1027,very weak,False,False
+language,paid_working_hours,Cultural,Economic,False,-0.063,0.0441,1022,very weak,False,False
+language,job_satisfaction,Cultural,Economic,False,0.0691,0.0348,932,very weak,False,False
+language,work_life_balance,Cultural,Social,False,0.1205,0.0002,965,very weak,False,False
+language,leisure_time,Cultural,Social,False,0.0202,0.521,1014,very weak,False,False
+language,be_yourself_in_nz,Cultural,Social,False,0.1502,0.0,1012,very weak,False,False
+language,be_yourself_in_newlands,Cultural,Social,False,0.1757,0.0,1002,very weak,False,False
+language,life_satisfaction,Cultural,Social,False,0.0792,0.0117,1012,very weak,False,False
+language,meaning_and_purpose,Cultural,Social,False,0.0814,0.0175,851,very weak,False,False
+language,family_wellbeing,Cultural,Social,False,0.092,0.0035,1002,very weak,False,False
+language,access_to_natural_environment,Cultural,Environment,False,0.2183,0.0,1008,weak,False,False
+language,work_travel_time,Cultural,Economic,False,-0.0543,0.0918,966,very weak,False,False
+language,basic_life_skills,Cultural,Economic,False,0.2299,0.0,1013,weak,False,False
+language,newlands_resident,Cultural,Disaster,False,0.0044,0.8907,958,very weak,False,False
+language,satisfaction_income,Cultural,Economic,False,0.0642,0.289,275,very weak,False,True
+language,confident_in_finding_a_new_job,Cultural,Economic,False,0.0736,0.2025,302,very weak,False,True
+language,confident_water_safety,Cultural,Environment,False,0.1963,0.0005,311,very weak,False,True
+language,optimal_use_of_land,Cultural,Environment,False,0.0677,0.2336,312,very weak,False,True
+language,personal_mental_health,Cultural,Social,False,-0.0126,0.876,157,very weak,False,True
+language,vote_local_elections_2019,Cultural,Governance,False,-0.1067,0.4146,61,very weak,False,True
+language,vote_general_election_2020,Cultural,Governance,False,-0.067,0.6065,62,very weak,False,True
+language,voted_local_elections_2022,Cultural,Governance,False,0.1414,0.023,258,very weak,False,True
+language,voted_general_elections_2023,Cultural,Governance,False,0.0494,0.4304,257,very weak,False,True
+language,home_disaster_ready,Cultural,Disaster,False,-0.0262,0.4839,718,very weak,False,False
+language,neighbourhood_support_group,Cultural,Social,False,0.0169,0.6599,683,very weak,False,False
+language,out_of_newlands_during_day,Cultural,Disaster,False,0.0681,0.0844,643,very weak,False,False
+language,place_out_of_newlands_disaster_ready,Cultural,Disaster,False,0.0956,0.0345,489,very weak,False,False
+belonging,cultural_activities,Cultural,Cultural,True,0.0964,0.0019,1039,very weak,False,False
+belonging,te_reo,Cultural,Cultural,True,0.043,0.1659,1040,very weak,False,False
+belonging,cultural_knowledge,Cultural,Cultural,True,0.0502,0.1059,1041,very weak,False,False
+belonging,trust_nz_government,Cultural,Governance,False,0.0876,0.0047,1036,very weak,False,False
+belonging,trust_local_council,Cultural,Governance,False,0.0628,0.0441,1028,very weak,False,False
+belonging,trust_nz_police,Cultural,Governance,False,0.1336,0.0,1035,very weak,False,False
+belonging,safety,Cultural,Social,False,0.0196,0.5285,1042,very weak,False,False
+belonging,discrimination,Cultural,Social,False,-0.0747,0.0162,1036,very weak,False,False
+belonging,loneliness,Cultural,Social,False,0.1556,0.0,1028,very weak,False,False
+belonging,independence,Cultural,Social,False,0.1936,0.0,1025,very weak,False,False
+belonging,support_in_crisis,Cultural,Social,False,0.2834,0.0,1028,weak,False,False
+belonging,level_of_control,Cultural,Social,False,0.2286,0.0,1026,weak,False,False
+belonging,volunteering_time,Cultural,Social,False,0.1401,0.0,1029,very weak,False,False
+belonging,paid_working_hours,Cultural,Economic,False,0.0632,0.0431,1024,very weak,False,False
+belonging,job_satisfaction,Cultural,Economic,False,0.1341,0.0,934,very weak,False,False
+belonging,work_life_balance,Cultural,Social,False,0.1517,0.0,967,very weak,False,False
+belonging,leisure_time,Cultural,Social,False,0.0805,0.0102,1016,very weak,False,False
+belonging,be_yourself_in_nz,Cultural,Social,False,0.348,0.0,1014,weak,False,False
+belonging,be_yourself_in_newlands,Cultural,Social,False,0.3264,0.0,1004,weak,False,False
+belonging,life_satisfaction,Cultural,Social,False,0.2392,0.0,1014,weak,False,False
+belonging,meaning_and_purpose,Cultural,Social,False,0.2376,0.0,853,weak,False,False
+belonging,family_wellbeing,Cultural,Social,False,0.2788,0.0,1004,weak,False,False
+belonging,access_to_natural_environment,Cultural,Environment,False,0.2471,0.0,1010,weak,False,False
+belonging,work_travel_time,Cultural,Economic,False,-0.0082,0.7994,968,very weak,False,False
+belonging,basic_life_skills,Cultural,Economic,False,0.2536,0.0,1015,weak,False,False
+belonging,newlands_resident,Cultural,Disaster,False,-0.0431,0.1821,960,very weak,False,False
+belonging,satisfaction_income,Cultural,Economic,False,0.1168,0.0529,275,very weak,False,True
+belonging,confident_in_finding_a_new_job,Cultural,Economic,False,0.1804,0.0016,302,very weak,False,True
+belonging,confident_water_safety,Cultural,Environment,False,0.1212,0.0325,311,very weak,False,True
+belonging,optimal_use_of_land,Cultural,Environment,False,0.0493,0.3858,312,very weak,False,True
+belonging,personal_mental_health,Cultural,Social,False,0.2628,0.0008,157,weak,False,True
+belonging,vote_local_elections_2019,Cultural,Governance,False,0.1892,0.1448,61,very weak,False,True
+belonging,vote_general_election_2020,Cultural,Governance,False,0.3482,0.0053,62,weak,False,True
+belonging,voted_local_elections_2022,Cultural,Governance,False,0.0321,0.608,258,very weak,False,True
+belonging,voted_general_elections_2023,Cultural,Governance,False,0.1078,0.0845,257,very weak,False,True
+belonging,home_disaster_ready,Cultural,Disaster,False,0.0246,0.5097,720,very weak,False,False
+belonging,neighbourhood_support_group,Cultural,Social,False,0.0374,0.328,685,very weak,False,False
+belonging,out_of_newlands_during_day,Cultural,Disaster,False,-0.0252,0.5234,645,very weak,False,False
+belonging,place_out_of_newlands_disaster_ready,Cultural,Disaster,False,0.0064,0.8882,491,very weak,False,False
+cultural_activities,te_reo,Cultural,Cultural,True,0.2792,0.0,1031,weak,False,False
+cultural_activities,cultural_knowledge,Cultural,Cultural,True,0.4595,0.0,1031,moderate,False,False
+cultural_activities,trust_nz_government,Cultural,Governance,False,0.1115,0.0003,1026,very weak,False,False
+cultural_activities,trust_local_council,Cultural,Governance,False,0.1127,0.0003,1020,very weak,False,False
+cultural_activities,trust_nz_police,Cultural,Governance,False,0.074,0.0178,1025,very weak,False,False
+cultural_activities,safety,Cultural,Social,False,0.0683,0.0282,1032,very weak,False,False
+cultural_activities,discrimination,Cultural,Social,False,0.1432,0.0,1026,very weak,False,False
+cultural_activities,loneliness,Cultural,Social,False,0.2656,0.0,1019,weak,False,False
+cultural_activities,independence,Cultural,Social,False,-0.0335,0.2863,1016,very weak,False,False
+cultural_activities,support_in_crisis,Cultural,Social,False,0.0857,0.0062,1019,very weak,False,False
+cultural_activities,level_of_control,Cultural,Social,False,-0.0181,0.5653,1015,very weak,False,False
+cultural_activities,volunteering_time,Cultural,Social,False,0.2622,0.0,1018,weak,False,False
+cultural_activities,paid_working_hours,Cultural,Economic,False,0.1366,0.0,1013,very weak,False,False
+cultural_activities,job_satisfaction,Cultural,Economic,False,0.0182,0.581,925,very weak,False,False
+cultural_activities,work_life_balance,Cultural,Social,False,-0.0077,0.8112,956,very weak,False,False
+cultural_activities,leisure_time,Cultural,Social,False,0.0052,0.8701,1005,very weak,False,False
+cultural_activities,be_yourself_in_nz,Cultural,Social,False,-0.0374,0.2363,1003,very weak,False,False
+cultural_activities,be_yourself_in_newlands,Cultural,Social,False,-0.0437,0.1688,995,very weak,False,False
+cultural_activities,life_satisfaction,Cultural,Social,False,0.0532,0.0921,1003,very weak,False,False
+cultural_activities,meaning_and_purpose,Cultural,Social,False,0.2022,0.0,842,weak,False,False
+cultural_activities,family_wellbeing,Cultural,Social,False,0.139,0.0,995,very weak,False,False
+cultural_activities,access_to_natural_environment,Cultural,Environment,False,0.0682,0.0311,999,very weak,False,False
+cultural_activities,work_travel_time,Cultural,Economic,False,0.0917,0.0045,959,very weak,False,False
+cultural_activities,basic_life_skills,Cultural,Economic,False,-0.0157,0.6192,1004,very weak,False,False
+cultural_activities,newlands_resident,Cultural,Disaster,False,-0.1105,0.0006,949,very weak,False,False
+cultural_activities,satisfaction_income,Cultural,Economic,False,0.0633,0.2959,275,very weak,False,True
+cultural_activities,confident_in_finding_a_new_job,Cultural,Economic,False,0.2241,0.0001,302,weak,False,True
+cultural_activities,confident_water_safety,Cultural,Environment,False,0.0101,0.8593,311,very weak,False,True
+cultural_activities,optimal_use_of_land,Cultural,Environment,False,-0.053,0.3507,312,very weak,False,True
+cultural_activities,personal_mental_health,Cultural,Social,False,-0.0157,0.8454,157,very weak,False,True
+cultural_activities,vote_local_elections_2019,Cultural,Governance,False,0.1528,0.241,61,very weak,False,True
+cultural_activities,vote_general_election_2020,Cultural,Governance,False,0.1625,0.2078,62,very weak,False,True
+cultural_activities,voted_local_elections_2022,Cultural,Governance,False,0.106,0.0892,258,very weak,False,True
+cultural_activities,voted_general_elections_2023,Cultural,Governance,False,0.0824,0.1879,257,very weak,False,True
+cultural_activities,home_disaster_ready,Cultural,Disaster,False,0.0905,0.0157,711,very weak,False,False
+cultural_activities,neighbourhood_support_group,Cultural,Social,False,0.1736,0.0,676,very weak,False,False
+cultural_activities,out_of_newlands_during_day,Cultural,Disaster,False,0.0258,0.5163,636,very weak,False,False
+cultural_activities,place_out_of_newlands_disaster_ready,Cultural,Disaster,False,0.1187,0.0088,486,very weak,False,False
+te_reo,cultural_knowledge,Cultural,Cultural,True,0.2744,0.0,1033,weak,False,False
+te_reo,trust_nz_government,Cultural,Governance,False,0.021,0.5014,1027,very weak,False,False
+te_reo,trust_local_council,Cultural,Governance,False,0.0336,0.2842,1020,very weak,False,False
+te_reo,trust_nz_police,Cultural,Governance,False,-0.136,0.0,1026,very weak,False,False
+te_reo,safety,Cultural,Social,False,-0.0358,0.25,1033,very weak,False,False
+te_reo,discrimination,Cultural,Social,False,0.1227,0.0001,1027,very weak,False,False
+te_reo,loneliness,Cultural,Social,False,0.0425,0.1755,1019,very weak,False,False
+te_reo,independence,Cultural,Social,False,-0.0871,0.0054,1016,very weak,False,False
+te_reo,support_in_crisis,Cultural,Social,False,0.0136,0.6647,1019,very weak,False,False
+te_reo,level_of_control,Cultural,Social,False,-0.0746,0.0174,1015,very weak,False,False
+te_reo,volunteering_time,Cultural,Social,False,0.0359,0.2518,1019,very weak,False,False
+te_reo,paid_working_hours,Cultural,Economic,False,0.0738,0.0188,1013,very weak,False,False
+te_reo,job_satisfaction,Cultural,Economic,False,0.0279,0.3975,923,very weak,False,False
+te_reo,work_life_balance,Cultural,Social,False,-0.0405,0.211,956,very weak,False,False
+te_reo,leisure_time,Cultural,Social,False,-0.0111,0.7263,1006,very weak,False,False
+te_reo,be_yourself_in_nz,Cultural,Social,False,0.0165,0.6021,1003,very weak,False,False
+te_reo,be_yourself_in_newlands,Cultural,Social,False,0.0008,0.9793,995,very weak,False,False
+te_reo,life_satisfaction,Cultural,Social,False,0.0152,0.6318,1003,very weak,False,False
+te_reo,meaning_and_purpose,Cultural,Social,False,0.0161,0.6412,842,very weak,False,False
+te_reo,family_wellbeing,Cultural,Social,False,-0.0637,0.0446,995,very weak,False,False
+te_reo,access_to_natural_environment,Cultural,Environment,False,-0.0391,0.2168,999,very weak,False,False
+te_reo,work_travel_time,Cultural,Economic,False,-0.0355,0.2729,957,very weak,False,False
+te_reo,basic_life_skills,Cultural,Economic,False,0.0454,0.1502,1004,very weak,False,False
+te_reo,newlands_resident,Cultural,Disaster,False,0.0497,0.1258,949,very weak,False,False
+te_reo,satisfaction_income,Cultural,Economic,False,-0.0353,0.5607,275,very weak,False,True
+te_reo,confident_in_finding_a_new_job,Cultural,Economic,False,0.1207,0.036,302,very weak,False,True
+te_reo,confident_water_safety,Cultural,Environment,False,-0.0501,0.3789,311,very weak,False,True
+te_reo,optimal_use_of_land,Cultural,Environment,False,-0.1683,0.0028,312,very weak,False,True
+te_reo,personal_mental_health,Cultural,Social,False,-0.1402,0.0798,157,very weak,False,True
+te_reo,vote_local_elections_2019,Cultural,Governance,False,0.1832,0.1581,61,very weak,False,True
+te_reo,vote_general_election_2020,Cultural,Governance,False,0.1595,0.2165,62,very weak,False,True
+te_reo,voted_local_elections_2022,Cultural,Governance,False,0.081,0.195,258,very weak,False,True
+te_reo,voted_general_elections_2023,Cultural,Governance,False,0.0875,0.1623,257,very weak,False,True
+te_reo,home_disaster_ready,Cultural,Disaster,False,-0.0511,0.1721,715,very weak,False,False
+te_reo,neighbourhood_support_group,Cultural,Social,False,0.0845,0.0275,680,very weak,False,False
+te_reo,out_of_newlands_during_day,Cultural,Disaster,False,-0.0383,0.3335,640,very weak,False,False
+te_reo,place_out_of_newlands_disaster_ready,Cultural,Disaster,False,0.0434,0.3398,487,very weak,False,False
+cultural_knowledge,trust_nz_government,Cultural,Governance,False,0.1763,0.0,1032,very weak,False,False
+cultural_knowledge,trust_local_council,Cultural,Governance,False,0.0926,0.003,1024,very weak,False,False
+cultural_knowledge,trust_nz_police,Cultural,Governance,False,-0.0576,0.0647,1029,very weak,False,False
+cultural_knowledge,safety,Cultural,Social,False,0.0951,0.0022,1036,very weak,False,False
+cultural_knowledge,discrimination,Cultural,Social,False,0.1471,0.0,1030,very weak,False,False
+cultural_knowledge,loneliness,Cultural,Social,False,0.2027,0.0,1022,weak,False,False
+cultural_knowledge,independence,Cultural,Social,False,-0.1064,0.0007,1019,very weak,False,False
+cultural_knowledge,support_in_crisis,Cultural,Social,False,0.0579,0.0641,1022,very weak,False,False
+cultural_knowledge,level_of_control,Cultural,Social,False,-0.1035,0.0009,1018,very weak,False,False
+cultural_knowledge,volunteering_time,Cultural,Social,False,0.1834,0.0,1022,very weak,False,False
+cultural_knowledge,paid_working_hours,Cultural,Economic,False,0.1491,0.0,1016,very weak,False,False
+cultural_knowledge,job_satisfaction,Cultural,Economic,False,0.0736,0.0251,926,very weak,False,False
+cultural_knowledge,work_life_balance,Cultural,Social,False,-0.0265,0.4117,959,very weak,False,False
+cultural_knowledge,leisure_time,Cultural,Social,False,-0.0166,0.5984,1011,very weak,False,False
+cultural_knowledge,be_yourself_in_nz,Cultural,Social,False,-0.0088,0.7793,1006,very weak,False,False
+cultural_knowledge,be_yourself_in_newlands,Cultural,Social,False,-0.0127,0.6892,998,very weak,False,False
+cultural_knowledge,life_satisfaction,Cultural,Social,False,-0.0317,0.3152,1006,very weak,False,False
+cultural_knowledge,meaning_and_purpose,Cultural,Social,False,0.1104,0.0013,846,very weak,False,False
+cultural_knowledge,family_wellbeing,Cultural,Social,False,0.0713,0.0243,998,very weak,False,False
+cultural_knowledge,access_to_natural_environment,Cultural,Environment,False,0.053,0.094,1000,very weak,False,False
+cultural_knowledge,work_travel_time,Cultural,Economic,False,0.0537,0.0968,958,very weak,False,False
+cultural_knowledge,basic_life_skills,Cultural,Economic,False,0.0778,0.0136,1005,very weak,False,False
+cultural_knowledge,newlands_resident,Cultural,Disaster,False,-0.1486,0.0,950,very weak,False,False
+cultural_knowledge,satisfaction_income,Cultural,Economic,False,-0.0523,0.3892,274,very weak,False,True
+cultural_knowledge,confident_in_finding_a_new_job,Cultural,Economic,False,0.1817,0.0015,301,very weak,False,True
+cultural_knowledge,confident_water_safety,Cultural,Environment,False,-0.0451,0.4287,310,very weak,False,True
+cultural_knowledge,optimal_use_of_land,Cultural,Environment,False,-0.1524,0.007,311,very weak,False,True
+cultural_knowledge,personal_mental_health,Cultural,Social,False,-0.0384,0.6331,157,very weak,False,True
+cultural_knowledge,vote_local_elections_2019,Cultural,Governance,False,0.018,0.8909,61,very weak,False,True
+cultural_knowledge,vote_general_election_2020,Cultural,Governance,False,-0.0536,0.6804,62,very weak,False,True
+cultural_knowledge,voted_local_elections_2022,Cultural,Governance,False,-0.0063,0.9202,257,very weak,False,True
+cultural_knowledge,voted_general_elections_2023,Cultural,Governance,False,0.018,0.7749,256,very weak,False,True
+cultural_knowledge,home_disaster_ready,Cultural,Disaster,False,0.0036,0.9237,714,very weak,False,False
+cultural_knowledge,neighbourhood_support_group,Cultural,Social,False,0.1064,0.0055,679,very weak,False,False
+cultural_knowledge,out_of_newlands_during_day,Cultural,Disaster,False,0.0362,0.3613,639,very weak,False,False
+cultural_knowledge,place_out_of_newlands_disaster_ready,Cultural,Disaster,False,0.1204,0.0079,485,very weak,False,False
+trust_nz_government,trust_local_council,Governance,Governance,True,0.5743,0.0,1025,moderate,False,False
+trust_nz_government,trust_nz_police,Governance,Governance,True,0.3568,0.0,1025,weak,False,False
+trust_nz_government,safety,Governance,Social,False,0.1946,0.0,1032,very weak,False,False
+trust_nz_government,discrimination,Governance,Social,False,-0.0819,0.0086,1025,very weak,False,False
+trust_nz_government,loneliness,Governance,Social,False,0.1226,0.0001,1017,very weak,False,False
+trust_nz_government,independence,Governance,Social,False,-0.0252,0.4226,1014,very weak,False,False
+trust_nz_government,support_in_crisis,Governance,Social,False,0.0564,0.0717,1019,very weak,False,False
+trust_nz_government,level_of_control,Governance,Social,False,0.1652,0.0,1015,very weak,False,False
+trust_nz_government,volunteering_time,Governance,Social,False,0.1235,0.0001,1016,very weak,False,False
+trust_nz_government,paid_working_hours,Governance,Economic,False,0.0696,0.0267,1012,very weak,False,False
+trust_nz_government,job_satisfaction,Governance,Economic,False,0.125,0.0001,922,very weak,False,False
+trust_nz_government,work_life_balance,Governance,Social,False,0.113,0.0005,956,very weak,False,False
+trust_nz_government,leisure_time,Governance,Social,False,0.1069,0.0007,1005,very weak,False,False
+trust_nz_government,be_yourself_in_nz,Governance,Social,False,0.1047,0.0009,1001,very weak,False,False
+trust_nz_government,be_yourself_in_newlands,Governance,Social,False,0.0977,0.002,995,very weak,False,False
+trust_nz_government,life_satisfaction,Governance,Social,False,0.1105,0.0005,1001,very weak,False,False
+trust_nz_government,meaning_and_purpose,Governance,Social,False,0.0737,0.0323,844,very weak,False,False
+trust_nz_government,family_wellbeing,Governance,Social,False,0.18,0.0,995,very weak,False,False
+trust_nz_government,access_to_natural_environment,Governance,Environment,False,0.0921,0.0036,995,very weak,False,False
+trust_nz_government,work_travel_time,Governance,Economic,False,0.0236,0.4654,956,very weak,False,False
+trust_nz_government,basic_life_skills,Governance,Economic,False,0.0473,0.1352,1000,very weak,False,False
+trust_nz_government,newlands_resident,Governance,Disaster,False,-0.0052,0.872,945,very weak,False,False
+trust_nz_government,satisfaction_income,Governance,Economic,False,0.3282,0.0,273,weak,False,True
+trust_nz_government,confident_in_finding_a_new_job,Governance,Economic,False,0.2464,0.0,302,weak,False,True
+trust_nz_government,confident_water_safety,Governance,Environment,False,0.2159,0.0001,309,weak,False,True
+trust_nz_government,optimal_use_of_land,Governance,Environment,False,0.2964,0.0,310,weak,False,True
+trust_nz_government,personal_mental_health,Governance,Social,False,0.2304,0.0036,157,weak,False,True
+trust_nz_government,vote_local_elections_2019,Governance,Governance,True,0.1105,0.3979,61,very weak,False,True
+trust_nz_government,vote_general_election_2020,Governance,Governance,True,-0.0061,0.9626,62,very weak,False,True
+trust_nz_government,voted_local_elections_2022,Governance,Governance,True,-0.069,0.2714,256,very weak,False,True
+trust_nz_government,voted_general_elections_2023,Governance,Governance,True,-0.0187,0.7671,255,very weak,False,True
+trust_nz_government,home_disaster_ready,Governance,Disaster,False,0.1874,0.0,711,very weak,False,False
+trust_nz_government,neighbourhood_support_group,Governance,Social,False,0.0767,0.0461,677,very weak,False,False
+trust_nz_government,out_of_newlands_during_day,Governance,Disaster,False,0.0485,0.2221,637,very weak,False,False
+trust_nz_government,place_out_of_newlands_disaster_ready,Governance,Disaster,False,0.0673,0.1387,486,very weak,False,False
+trust_local_council,trust_nz_police,Governance,Governance,True,0.3094,0.0,1018,weak,False,False
+trust_local_council,safety,Governance,Social,False,0.1703,0.0,1023,very weak,False,False
+trust_local_council,discrimination,Governance,Social,False,-0.1371,0.0,1018,very weak,False,False
+trust_local_council,loneliness,Governance,Social,False,0.0988,0.0017,1010,very weak,False,False
+trust_local_council,independence,Governance,Social,False,0.0102,0.7474,1007,very weak,False,False
+trust_local_council,support_in_crisis,Governance,Social,False,0.0858,0.0063,1012,very weak,False,False
+trust_local_council,level_of_control,Governance,Social,False,0.1051,0.0008,1008,very weak,False,False
+trust_local_council,volunteering_time,Governance,Social,False,0.1054,0.0008,1009,very weak,False,False
+trust_local_council,paid_working_hours,Governance,Economic,False,0.0548,0.0826,1004,very weak,False,False
+trust_local_council,job_satisfaction,Governance,Economic,False,0.092,0.0053,915,very weak,False,False
+trust_local_council,work_life_balance,Governance,Social,False,0.1162,0.0003,948,very weak,False,False
+trust_local_council,leisure_time,Governance,Social,False,0.0713,0.0242,999,very weak,False,False
+trust_local_council,be_yourself_in_nz,Governance,Social,False,0.0971,0.0022,994,very weak,False,False
+trust_local_council,be_yourself_in_newlands,Governance,Social,False,0.1051,0.0009,988,very weak,False,False
+trust_local_council,life_satisfaction,Governance,Social,False,0.0708,0.0256,994,very weak,False,False
+trust_local_council,meaning_and_purpose,Governance,Social,False,0.0969,0.005,837,very weak,False,False
+trust_local_council,family_wellbeing,Governance,Social,False,0.1455,0.0,988,very weak,False,False
+trust_local_council,access_to_natural_environment,Governance,Environment,False,0.1118,0.0004,988,very weak,False,False
+trust_local_council,work_travel_time,Governance,Economic,False,0.0001,0.9966,951,very weak,False,False
+trust_local_council,basic_life_skills,Governance,Economic,False,-0.0263,0.4086,993,very weak,False,False
+trust_local_council,newlands_resident,Governance,Disaster,False,-0.002,0.9524,940,very weak,False,False
+trust_local_council,satisfaction_income,Governance,Economic,False,0.1538,0.011,272,very weak,False,True
+trust_local_council,confident_in_finding_a_new_job,Governance,Economic,False,0.138,0.0165,301,very weak,False,True
+trust_local_council,confident_water_safety,Governance,Environment,False,0.2251,0.0001,307,weak,False,True
+trust_local_council,optimal_use_of_land,Governance,Environment,False,0.1997,0.0004,308,very weak,False,True
+trust_local_council,personal_mental_health,Governance,Social,False,0.0745,0.3578,155,very weak,False,True
+trust_local_council,vote_local_elections_2019,Governance,Governance,True,-0.0539,0.6812,61,very weak,False,True
+trust_local_council,vote_general_election_2020,Governance,Governance,True,-0.1629,0.2107,61,very weak,False,True
+trust_local_council,voted_local_elections_2022,Governance,Governance,True,-0.035,0.5784,255,very weak,False,True
+trust_local_council,voted_general_elections_2023,Governance,Governance,True,-0.0717,0.2541,255,very weak,False,True
+trust_local_council,home_disaster_ready,Governance,Disaster,False,0.0362,0.3381,704,very weak,False,False
+trust_local_council,neighbourhood_support_group,Governance,Social,False,0.1219,0.0016,670,very weak,False,False
+trust_local_council,out_of_newlands_during_day,Governance,Disaster,False,0.0223,0.5766,630,very weak,False,False
+trust_local_council,place_out_of_newlands_disaster_ready,Governance,Disaster,False,0.0988,0.0301,482,very weak,False,False
+trust_nz_police,safety,Governance,Social,False,0.2025,0.0,1034,weak,False,False
+trust_nz_police,discrimination,Governance,Social,False,-0.1845,0.0,1025,very weak,False,False
+trust_nz_police,loneliness,Governance,Social,False,0.1877,0.0,1017,very weak,False,False
+trust_nz_police,independence,Governance,Social,False,0.2158,0.0,1016,weak,False,False
+trust_nz_police,support_in_crisis,Governance,Social,False,0.2329,0.0,1019,weak,False,False
+trust_nz_police,level_of_control,Governance,Social,False,0.2209,0.0,1015,weak,False,False
+trust_nz_police,volunteering_time,Governance,Social,False,0.1137,0.0003,1016,very weak,False,False
+trust_nz_police,paid_working_hours,Governance,Economic,False,0.1419,0.0,1013,very weak,False,False
+trust_nz_police,job_satisfaction,Governance,Economic,False,0.2012,0.0,923,weak,False,False
+trust_nz_police,work_life_balance,Governance,Social,False,0.1697,0.0,957,very weak,False,False
+trust_nz_police,leisure_time,Governance,Social,False,0.0368,0.2441,1005,very weak,False,False
+trust_nz_police,be_yourself_in_nz,Governance,Social,False,0.1725,0.0,1001,very weak,False,False
+trust_nz_police,be_yourself_in_newlands,Governance,Social,False,0.1844,0.0,995,very weak,False,False
+trust_nz_police,life_satisfaction,Governance,Social,False,0.165,0.0,1001,very weak,False,False
+trust_nz_police,meaning_and_purpose,Governance,Social,False,0.1384,0.0001,843,very weak,False,False
+trust_nz_police,family_wellbeing,Governance,Social,False,0.2563,0.0,993,weak,False,False
+trust_nz_police,access_to_natural_environment,Governance,Environment,False,0.1966,0.0,997,very weak,False,False
+trust_nz_police,work_travel_time,Governance,Economic,False,-0.0243,0.4533,955,very weak,False,False
+trust_nz_police,basic_life_skills,Governance,Economic,False,0.0255,0.4198,1002,very weak,False,False
+trust_nz_police,newlands_resident,Governance,Disaster,False,0.006,0.8532,945,very weak,False,False
+trust_nz_police,satisfaction_income,Governance,Economic,False,0.2506,0.0,274,weak,False,True
+trust_nz_police,confident_in_finding_a_new_job,Governance,Economic,False,0.2008,0.0004,302,weak,False,True
+trust_nz_police,confident_water_safety,Governance,Environment,False,0.2539,0.0,310,weak,False,True
+trust_nz_police,optimal_use_of_land,Governance,Environment,False,0.2557,0.0,311,weak,False,True
+trust_nz_police,personal_mental_health,Governance,Social,False,0.3001,0.0001,157,weak,False,True
+trust_nz_police,vote_local_elections_2019,Governance,Governance,True,0.0456,0.7283,61,very weak,False,True
+trust_nz_police,vote_general_election_2020,Governance,Governance,True,0.055,0.6726,62,very weak,False,True
+trust_nz_police,voted_local_elections_2022,Governance,Governance,True,0.0442,0.4808,257,very weak,False,True
+trust_nz_police,voted_general_elections_2023,Governance,Governance,True,-0.0189,0.7639,256,very weak,False,True
+trust_nz_police,home_disaster_ready,Governance,Disaster,False,0.1809,0.0,709,very weak,False,False
+trust_nz_police,neighbourhood_support_group,Governance,Social,False,0.0769,0.0457,676,very weak,False,False
+trust_nz_police,out_of_newlands_during_day,Governance,Disaster,False,0.1251,0.0016,636,very weak,False,False
+trust_nz_police,place_out_of_newlands_disaster_ready,Governance,Disaster,False,0.0611,0.179,485,very weak,False,False
+safety,discrimination,Social,Social,True,-0.0393,0.2077,1031,very weak,False,False
+safety,loneliness,Social,Social,True,0.0751,0.0162,1023,very weak,False,False
+safety,independence,Social,Social,True,0.1086,0.0005,1020,very weak,False,False
+safety,support_in_crisis,Social,Social,True,0.1598,0.0,1023,very weak,False,False
+safety,level_of_control,Social,Social,True,0.1561,0.0,1019,very weak,False,False
+safety,volunteering_time,Social,Social,True,0.0442,0.1583,1022,very weak,False,False
+safety,paid_working_hours,Social,Economic,False,0.1781,0.0,1018,very weak,False,False
+safety,job_satisfaction,Social,Economic,False,0.1941,0.0,928,very weak,False,False
+safety,work_life_balance,Social,Social,True,0.1331,0.0,961,very weak,False,False
+safety,leisure_time,Social,Social,True,0.0827,0.0086,1009,very weak,False,False
+safety,be_yourself_in_nz,Social,Social,True,0.0903,0.0041,1007,very weak,False,False
+safety,be_yourself_in_newlands,Social,Social,True,0.1792,0.0,999,very weak,False,False
+safety,life_satisfaction,Social,Social,True,0.1492,0.0,1007,very weak,False,False
+safety,meaning_and_purpose,Social,Social,True,0.1131,0.001,846,very weak,False,False
+safety,family_wellbeing,Social,Social,True,0.1076,0.0006,999,very weak,False,False
+safety,access_to_natural_environment,Social,Environment,False,0.2129,0.0,1001,weak,False,False
+safety,work_travel_time,Social,Economic,False,0.0985,0.0022,960,very weak,False,False
+safety,basic_life_skills,Social,Economic,False,0.1288,0.0,1006,very weak,False,False
+safety,newlands_resident,Social,Disaster,False,-0.034,0.2954,951,very weak,False,False
+safety,satisfaction_income,Social,Economic,False,0.1786,0.0029,275,very weak,False,True
+safety,confident_in_finding_a_new_job,Social,Economic,False,0.1008,0.0803,302,very weak,False,True
+safety,confident_water_safety,Social,Environment,False,0.1813,0.0013,311,very weak,False,True
+safety,optimal_use_of_land,Social,Environment,False,0.1149,0.0425,312,very weak,False,True
+safety,personal_mental_health,Social,Social,True,0.0259,0.7483,157,very weak,False,True
+safety,vote_local_elections_2019,Social,Governance,False,0.0828,0.5272,61,very weak,False,True
+safety,vote_general_election_2020,Social,Governance,False,0.1632,0.2058,62,very weak,False,True
+safety,voted_local_elections_2022,Social,Governance,False,0.0198,0.7524,258,very weak,False,True
+safety,voted_general_elections_2023,Social,Governance,False,0.0305,0.6263,257,very weak,False,True
+safety,home_disaster_ready,Social,Disaster,False,0.035,0.3504,713,very weak,False,False
+safety,neighbourhood_support_group,Social,Social,True,0.0628,0.1018,680,very weak,False,False
+safety,out_of_newlands_during_day,Social,Disaster,False,0.1266,0.0013,640,very weak,False,False
+safety,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0551,0.2257,486,very weak,False,False
+discrimination,loneliness,Social,Social,True,0.0077,0.8069,1018,very weak,False,False
+discrimination,independence,Social,Social,True,-0.1439,0.0,1016,very weak,False,False
+discrimination,support_in_crisis,Social,Social,True,-0.1017,0.0011,1019,very weak,False,False
+discrimination,level_of_control,Social,Social,True,-0.2157,0.0,1015,weak,False,False
+discrimination,volunteering_time,Social,Social,True,0.0851,0.0066,1018,very weak,False,False
+discrimination,paid_working_hours,Social,Economic,False,0.1087,0.0005,1013,very weak,False,False
+discrimination,job_satisfaction,Social,Economic,False,-0.1694,0.0,924,very weak,False,False
+discrimination,work_life_balance,Social,Social,True,-0.1979,0.0,956,very weak,False,False
+discrimination,leisure_time,Social,Social,True,-0.0573,0.0693,1005,very weak,False,False
+discrimination,be_yourself_in_nz,Social,Social,True,-0.2652,0.0,1002,weak,False,False
+discrimination,be_yourself_in_newlands,Social,Social,True,-0.2703,0.0,994,weak,False,False
+discrimination,life_satisfaction,Social,Social,True,-0.2207,0.0,1002,weak,False,False
+discrimination,meaning_and_purpose,Social,Social,True,-0.0857,0.0128,843,very weak,False,False
+discrimination,family_wellbeing,Social,Social,True,-0.1036,0.0011,994,very weak,False,False
+discrimination,access_to_natural_environment,Social,Environment,False,-0.1425,0.0,996,very weak,False,False
+discrimination,work_travel_time,Social,Economic,False,0.0556,0.0864,954,very weak,False,False
+discrimination,basic_life_skills,Social,Economic,False,0.0219,0.4893,1001,very weak,False,False
+discrimination,newlands_resident,Social,Disaster,False,-0.1146,0.0004,946,very weak,False,False
+discrimination,satisfaction_income,Social,Economic,False,-0.1084,0.0755,270,very weak,False,True
+discrimination,confident_in_finding_a_new_job,Social,Economic,False,0.0157,0.7881,296,very weak,False,True
+discrimination,confident_water_safety,Social,Environment,False,-0.1272,0.0262,305,very weak,False,True
+discrimination,optimal_use_of_land,Social,Environment,False,-0.2204,0.0001,306,weak,False,True
+discrimination,personal_mental_health,Social,Social,True,-0.1099,0.1764,153,very weak,False,True
+discrimination,vote_local_elections_2019,Social,Governance,False,0.2215,0.098,57,weak,False,True
+discrimination,vote_general_election_2020,Social,Governance,False,0.1277,0.3411,58,very weak,False,True
+discrimination,voted_local_elections_2022,Social,Governance,False,0.0083,0.8955,256,very weak,False,True
+discrimination,voted_general_elections_2023,Social,Governance,False,-0.0051,0.935,255,very weak,False,True
+discrimination,home_disaster_ready,Social,Disaster,False,0.0396,0.2922,709,very weak,False,False
+discrimination,neighbourhood_support_group,Social,Social,True,-0.0005,0.9892,674,very weak,False,False
+discrimination,out_of_newlands_during_day,Social,Disaster,False,-0.0164,0.6806,635,very weak,False,False
+discrimination,place_out_of_newlands_disaster_ready,Social,Disaster,False,-0.0324,0.478,482,very weak,False,False
+loneliness,independence,Social,Social,True,0.1147,0.0002,1019,very weak,False,False
+loneliness,support_in_crisis,Social,Social,True,0.2289,0.0,1022,weak,False,False
+loneliness,level_of_control,Social,Social,True,0.1119,0.0003,1018,very weak,False,False
+loneliness,volunteering_time,Social,Social,True,0.1555,0.0,1021,very weak,False,False
+loneliness,paid_working_hours,Social,Economic,False,0.175,0.0,1016,very weak,False,False
+loneliness,job_satisfaction,Social,Economic,False,0.123,0.0002,928,very weak,False,False
+loneliness,work_life_balance,Social,Social,True,0.0585,0.0697,961,very weak,False,False
+loneliness,leisure_time,Social,Social,True,0.0676,0.032,1007,very weak,False,False
+loneliness,be_yourself_in_nz,Social,Social,True,0.1282,0.0,1003,very weak,False,False
+loneliness,be_yourself_in_newlands,Social,Social,True,0.0565,0.075,995,very weak,False,False
+loneliness,life_satisfaction,Social,Social,True,0.1477,0.0,1003,very weak,False,False
+loneliness,meaning_and_purpose,Social,Social,True,0.3007,0.0,842,weak,False,False
+loneliness,family_wellbeing,Social,Social,True,0.3044,0.0,995,weak,False,False
+loneliness,access_to_natural_environment,Social,Environment,False,0.1487,0.0,997,very weak,False,False
+loneliness,work_travel_time,Social,Economic,False,-0.0234,0.4693,957,very weak,False,False
+loneliness,basic_life_skills,Social,Economic,False,0.0576,0.0681,1002,very weak,False,False
+loneliness,newlands_resident,Social,Disaster,False,-0.2106,0.0,947,weak,False,False
+loneliness,satisfaction_income,Social,Economic,False,-0.1134,0.0612,273,very weak,False,True
+loneliness,confident_in_finding_a_new_job,Social,Economic,False,-0.0061,0.9166,300,very weak,False,True
+loneliness,confident_water_safety,Social,Environment,False,-0.1165,0.0407,309,very weak,False,True
+loneliness,optimal_use_of_land,Social,Environment,False,-0.1455,0.0102,310,very weak,False,True
+loneliness,personal_mental_health,Social,Social,True,-0.051,0.529,155,very weak,False,True
+loneliness,vote_local_elections_2019,Social,Governance,False,0.1293,0.3438,56,very weak,False,True
+loneliness,vote_general_election_2020,Social,Governance,False,0.1591,0.2382,57,very weak,False,True
+loneliness,voted_local_elections_2022,Social,Governance,False,0.0284,0.6517,256,very weak,False,True
+loneliness,voted_general_elections_2023,Social,Governance,False,-0.0702,0.2644,255,very weak,False,True
+loneliness,home_disaster_ready,Social,Disaster,False,0.0646,0.0847,713,very weak,False,False
+loneliness,neighbourhood_support_group,Social,Social,True,0.0626,0.1032,678,very weak,False,False
+loneliness,out_of_newlands_during_day,Social,Disaster,False,0.089,0.0245,638,very weak,False,False
+loneliness,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1086,0.0166,485,very weak,False,False
+independence,support_in_crisis,Social,Social,True,0.2755,0.0,1022,weak,False,False
+independence,level_of_control,Social,Social,True,0.4708,0.0,1018,moderate,False,False
+independence,volunteering_time,Social,Social,True,0.0577,0.0657,1019,very weak,False,False
+independence,paid_working_hours,Social,Economic,False,0.164,0.0,1016,very weak,False,False
+independence,job_satisfaction,Social,Economic,False,0.1783,0.0,926,very weak,False,False
+independence,work_life_balance,Social,Social,True,0.1905,0.0,958,very weak,False,False
+independence,leisure_time,Social,Social,True,0.0123,0.6975,1007,very weak,False,False
+independence,be_yourself_in_nz,Social,Social,True,0.2267,0.0,1000,weak,False,False
+independence,be_yourself_in_newlands,Social,Social,True,0.256,0.0,992,weak,False,False
+independence,life_satisfaction,Social,Social,True,0.2207,0.0,1000,weak,False,False
+independence,meaning_and_purpose,Social,Social,True,0.2019,0.0,841,weak,False,False
+independence,family_wellbeing,Social,Social,True,0.2495,0.0,992,weak,False,False
+independence,access_to_natural_environment,Social,Environment,False,0.1447,0.0,996,very weak,False,False
+independence,work_travel_time,Social,Economic,False,0.0676,0.0367,954,very weak,False,False
+independence,basic_life_skills,Social,Economic,False,0.1636,0.0,1001,very weak,False,False
+independence,newlands_resident,Social,Disaster,False,0.1324,0.0,944,very weak,False,False
+independence,satisfaction_income,Social,Economic,False,0.238,0.0001,274,weak,False,True
+independence,confident_in_finding_a_new_job,Social,Economic,False,0.0466,0.421,301,very weak,False,True
+independence,confident_water_safety,Social,Environment,False,0.1243,0.0286,310,very weak,False,True
+independence,optimal_use_of_land,Social,Environment,False,0.1768,0.0017,311,very weak,False,True
+independence,personal_mental_health,Social,Social,True,0.3475,0.0,156,weak,False,True
+independence,vote_local_elections_2019,Social,Governance,False,0.0298,0.8301,55,very weak,False,True
+independence,vote_general_election_2020,Social,Governance,False,0.0867,0.5267,56,very weak,False,True
+independence,voted_local_elections_2022,Social,Governance,False,0.1031,0.0986,258,very weak,False,True
+independence,voted_general_elections_2023,Social,Governance,False,0.2032,0.001,257,weak,False,True
+independence,home_disaster_ready,Social,Disaster,False,-0.0222,0.5548,711,very weak,False,False
+independence,neighbourhood_support_group,Social,Social,True,-0.0478,0.215,674,very weak,False,False
+independence,out_of_newlands_during_day,Social,Disaster,False,0.1501,0.0001,634,very weak,False,False
+independence,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0255,0.577,482,very weak,False,False
+support_in_crisis,level_of_control,Social,Social,True,0.3894,0.0,1023,weak,False,False
+support_in_crisis,volunteering_time,Social,Social,True,0.1553,0.0,1022,very weak,False,False
+support_in_crisis,paid_working_hours,Social,Economic,False,0.0571,0.0686,1019,very weak,False,False
+support_in_crisis,job_satisfaction,Social,Economic,False,0.2622,0.0,929,weak,False,False
+support_in_crisis,work_life_balance,Social,Social,True,0.2525,0.0,961,weak,False,False
+support_in_crisis,leisure_time,Social,Social,True,0.1025,0.0011,1010,very weak,False,False
+support_in_crisis,be_yourself_in_nz,Social,Social,True,0.2644,0.0,1003,weak,False,False
+support_in_crisis,be_yourself_in_newlands,Social,Social,True,0.3201,0.0,997,weak,False,False
+support_in_crisis,life_satisfaction,Social,Social,True,0.3696,0.0,1003,weak,False,False
+support_in_crisis,meaning_and_purpose,Social,Social,True,0.3822,0.0,846,weak,False,False
+support_in_crisis,family_wellbeing,Social,Social,True,0.3473,0.0,997,weak,False,False
+support_in_crisis,access_to_natural_environment,Social,Environment,False,0.3114,0.0,999,weak,False,False
+support_in_crisis,work_travel_time,Social,Economic,False,-0.0577,0.0744,957,very weak,False,False
+support_in_crisis,basic_life_skills,Social,Economic,False,0.234,0.0,1004,weak,False,False
+support_in_crisis,newlands_resident,Social,Disaster,False,-0.013,0.6892,947,very weak,False,False
+support_in_crisis,satisfaction_income,Social,Economic,False,0.2407,0.0001,274,weak,False,True
+support_in_crisis,confident_in_finding_a_new_job,Social,Economic,False,0.2214,0.0001,301,weak,False,True
+support_in_crisis,confident_water_safety,Social,Environment,False,0.2066,0.0002,310,weak,False,True
+support_in_crisis,optimal_use_of_land,Social,Environment,False,0.1239,0.0289,311,very weak,False,True
+support_in_crisis,personal_mental_health,Social,Social,True,0.2812,0.0004,156,weak,False,True
+support_in_crisis,vote_local_elections_2019,Social,Governance,False,0.0242,0.8614,55,very weak,False,True
+support_in_crisis,vote_general_election_2020,Social,Governance,False,0.2045,0.1309,56,weak,False,True
+support_in_crisis,voted_local_elections_2022,Social,Governance,False,0.022,0.7259,258,very weak,False,True
+support_in_crisis,voted_general_elections_2023,Social,Governance,False,0.0672,0.2838,257,very weak,False,True
+support_in_crisis,home_disaster_ready,Social,Disaster,False,0.102,0.0064,712,very weak,False,False
+support_in_crisis,neighbourhood_support_group,Social,Social,True,0.092,0.0167,677,very weak,False,False
+support_in_crisis,out_of_newlands_during_day,Social,Disaster,False,0.0487,0.2199,637,very weak,False,False
+support_in_crisis,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1251,0.0057,485,very weak,False,False
+level_of_control,volunteering_time,Social,Social,True,0.0651,0.0375,1022,very weak,False,False
+level_of_control,paid_working_hours,Social,Economic,False,0.025,0.4256,1019,very weak,False,False
+level_of_control,job_satisfaction,Social,Economic,False,0.2711,0.0,931,weak,False,False
+level_of_control,work_life_balance,Social,Social,True,0.397,0.0,963,weak,False,False
+level_of_control,leisure_time,Social,Social,True,0.179,0.0,1010,very weak,False,False
+level_of_control,be_yourself_in_nz,Social,Social,True,0.3412,0.0,1003,weak,False,False
+level_of_control,be_yourself_in_newlands,Social,Social,True,0.3783,0.0,995,weak,False,False
+level_of_control,life_satisfaction,Social,Social,True,0.4516,0.0,1003,moderate,False,False
+level_of_control,meaning_and_purpose,Social,Social,True,0.3737,0.0,846,weak,False,False
+level_of_control,family_wellbeing,Social,Social,True,0.4391,0.0,995,moderate,False,False
+level_of_control,access_to_natural_environment,Social,Environment,False,0.2288,0.0,997,weak,False,False
+level_of_control,work_travel_time,Social,Economic,False,-0.0468,0.1483,957,very weak,False,False
+level_of_control,basic_life_skills,Social,Economic,False,0.1968,0.0,1002,very weak,False,False
+level_of_control,newlands_resident,Social,Disaster,False,0.1207,0.0002,947,very weak,False,False
+level_of_control,satisfaction_income,Social,Economic,False,0.417,0.0,273,moderate,False,True
+level_of_control,confident_in_finding_a_new_job,Social,Economic,False,0.2172,0.0001,300,weak,False,True
+level_of_control,confident_water_safety,Social,Environment,False,0.2041,0.0003,309,weak,False,True
+level_of_control,optimal_use_of_land,Social,Environment,False,0.294,0.0,310,weak,False,True
+level_of_control,personal_mental_health,Social,Social,True,0.6112,0.0,155,moderate,False,True
+level_of_control,vote_local_elections_2019,Social,Governance,False,0.1612,0.2454,54,very weak,False,True
+level_of_control,vote_general_election_2020,Social,Governance,False,0.2555,0.0595,55,weak,False,True
+level_of_control,voted_local_elections_2022,Social,Governance,False,0.0235,0.7075,258,very weak,False,True
+level_of_control,voted_general_elections_2023,Social,Governance,False,0.0929,0.1375,257,very weak,False,True
+level_of_control,home_disaster_ready,Social,Disaster,False,0.2045,0.0,710,weak,False,False
+level_of_control,neighbourhood_support_group,Social,Social,True,0.0352,0.3617,675,very weak,False,False
+level_of_control,out_of_newlands_during_day,Social,Disaster,False,0.0324,0.4151,635,very weak,False,False
+level_of_control,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0865,0.057,485,very weak,False,False
+volunteering_time,paid_working_hours,Social,Economic,False,0.0063,0.8399,1020,very weak,False,False
+volunteering_time,job_satisfaction,Social,Economic,False,0.1454,0.0,931,very weak,False,False
+volunteering_time,work_life_balance,Social,Social,True,0.1289,0.0001,962,very weak,False,False
+volunteering_time,leisure_time,Social,Social,True,0.0523,0.0961,1012,very weak,False,False
+volunteering_time,be_yourself_in_nz,Social,Social,True,0.035,0.2673,1006,very weak,False,False
+volunteering_time,be_yourself_in_newlands,Social,Social,True,0.04,0.2065,998,very weak,False,False
+volunteering_time,life_satisfaction,Social,Social,True,0.0403,0.2014,1006,very weak,False,False
+volunteering_time,meaning_and_purpose,Social,Social,True,0.1754,0.0,845,very weak,False,False
+volunteering_time,family_wellbeing,Social,Social,True,0.1017,0.0013,996,very weak,False,False
+volunteering_time,access_to_natural_environment,Social,Environment,False,0.0643,0.0423,998,very weak,False,False
+volunteering_time,work_travel_time,Social,Economic,False,-0.0744,0.0213,957,very weak,False,False
+volunteering_time,basic_life_skills,Social,Economic,False,0.0767,0.0151,1003,very weak,False,False
+volunteering_time,newlands_resident,Social,Disaster,False,-0.037,0.2543,950,very weak,False,False
+volunteering_time,satisfaction_income,Social,Economic,False,0.0055,0.9284,274,very weak,False,True
+volunteering_time,confident_in_finding_a_new_job,Social,Economic,False,0.1874,0.0011,301,very weak,False,True
+volunteering_time,confident_water_safety,Social,Environment,False,0.0726,0.2025,310,very weak,False,True
+volunteering_time,optimal_use_of_land,Social,Environment,False,-0.0487,0.3926,311,very weak,False,True
+volunteering_time,personal_mental_health,Social,Social,True,0.1776,0.0264,156,very weak,False,True
+volunteering_time,vote_local_elections_2019,Social,Governance,False,0.1221,0.3761,55,very weak,False,True
+volunteering_time,vote_general_election_2020,Social,Governance,False,0.0795,0.5619,56,very weak,False,True
+volunteering_time,voted_local_elections_2022,Social,Governance,False,0.139,0.0254,258,very weak,False,True
+volunteering_time,voted_general_elections_2023,Social,Governance,False,0.06,0.3387,257,very weak,False,True
+volunteering_time,home_disaster_ready,Social,Disaster,False,0.0869,0.0203,713,very weak,False,False
+volunteering_time,neighbourhood_support_group,Social,Social,True,0.1723,0.0,678,very weak,False,False
+volunteering_time,out_of_newlands_during_day,Social,Disaster,False,-0.0047,0.9058,638,very weak,False,False
+volunteering_time,place_out_of_newlands_disaster_ready,Social,Disaster,False,-0.0292,0.5212,484,very weak,False,False
+paid_working_hours,job_satisfaction,Economic,Economic,True,0.1256,0.0001,931,very weak,False,False
+paid_working_hours,work_life_balance,Economic,Social,False,-0.0407,0.2067,963,very weak,False,False
+paid_working_hours,leisure_time,Economic,Social,False,-0.0942,0.0027,1010,very weak,False,False
+paid_working_hours,be_yourself_in_nz,Economic,Social,False,0.0487,0.1234,1001,very weak,False,False
+paid_working_hours,be_yourself_in_newlands,Economic,Social,False,0.0528,0.0964,991,very weak,False,False
+paid_working_hours,life_satisfaction,Economic,Social,False,-0.0046,0.8842,1001,very weak,False,False
+paid_working_hours,meaning_and_purpose,Economic,Social,False,0.032,0.354,842,very weak,False,False
+paid_working_hours,family_wellbeing,Economic,Social,False,0.0678,0.0329,991,very weak,False,False
+paid_working_hours,access_to_natural_environment,Economic,Environment,False,0.0553,0.081,995,very weak,False,False
+paid_working_hours,work_travel_time,Economic,Economic,True,0.1851,0.0,957,very weak,False,False
+paid_working_hours,basic_life_skills,Economic,Economic,True,0.0428,0.1759,1000,very weak,False,False
+paid_working_hours,newlands_resident,Economic,Disaster,False,-0.078,0.0163,947,very weak,False,False
+paid_working_hours,satisfaction_income,Economic,Economic,True,0.235,0.0001,273,weak,False,True
+paid_working_hours,confident_in_finding_a_new_job,Economic,Economic,True,0.2138,0.0002,300,weak,False,True
+paid_working_hours,confident_water_safety,Economic,Environment,False,-0.0147,0.7978,308,very weak,False,True
+paid_working_hours,optimal_use_of_land,Economic,Environment,False,0.1025,0.072,309,very weak,False,True
+paid_working_hours,personal_mental_health,Economic,Social,False,-0.0403,0.6203,154,very weak,False,True
+paid_working_hours,vote_local_elections_2019,Economic,Governance,False,0.1511,0.2816,53,very weak,False,True
+paid_working_hours,vote_general_election_2020,Economic,Governance,False,0.118,0.397,54,very weak,False,True
+paid_working_hours,voted_local_elections_2022,Economic,Governance,False,-0.0545,0.3839,258,very weak,False,True
+paid_working_hours,voted_general_elections_2023,Economic,Governance,False,0.0813,0.1942,257,very weak,False,True
+paid_working_hours,home_disaster_ready,Economic,Disaster,False,-0.0245,0.5155,708,very weak,False,False
+paid_working_hours,neighbourhood_support_group,Economic,Social,False,-0.0355,0.3585,673,very weak,False,False
+paid_working_hours,out_of_newlands_during_day,Economic,Disaster,False,0.3019,0.0,633,weak,False,False
+paid_working_hours,place_out_of_newlands_disaster_ready,Economic,Disaster,False,0.1563,0.0006,483,very weak,False,False
+job_satisfaction,work_life_balance,Economic,Social,False,0.4845,0.0,930,moderate,False,False
+job_satisfaction,leisure_time,Economic,Social,False,0.056,0.0887,926,very weak,False,False
+job_satisfaction,be_yourself_in_nz,Economic,Social,False,0.2601,0.0,915,weak,False,False
+job_satisfaction,be_yourself_in_newlands,Economic,Social,False,0.2699,0.0,904,weak,False,False
+job_satisfaction,life_satisfaction,Economic,Social,False,0.406,0.0,914,moderate,False,False
+job_satisfaction,meaning_and_purpose,Economic,Social,False,0.3643,0.0,780,weak,False,False
+job_satisfaction,family_wellbeing,Economic,Social,False,0.2251,0.0,905,weak,False,False
+job_satisfaction,access_to_natural_environment,Economic,Environment,False,0.2684,0.0,911,weak,False,False
+job_satisfaction,work_travel_time,Economic,Economic,True,-0.0498,0.1337,909,very weak,False,False
+job_satisfaction,basic_life_skills,Economic,Economic,True,0.2213,0.0,913,weak,False,False
+job_satisfaction,newlands_resident,Economic,Disaster,False,0.0018,0.9585,860,very weak,False,False
+job_satisfaction,satisfaction_income,Economic,Economic,True,0.4357,0.0,270,moderate,False,True
+job_satisfaction,confident_in_finding_a_new_job,Economic,Economic,True,0.4134,0.0,268,moderate,False,True
+job_satisfaction,confident_water_safety,Economic,Environment,False,0.1655,0.0068,266,very weak,False,True
+job_satisfaction,optimal_use_of_land,Economic,Environment,False,0.2028,0.0008,267,weak,False,True
+job_satisfaction,personal_mental_health,Economic,Social,False,0.3669,0.0,137,weak,False,True
+job_satisfaction,vote_local_elections_2019,Economic,Governance,False,-0.1879,0.1745,54,very weak,False,True
+job_satisfaction,vote_general_election_2020,Economic,Governance,False,-0.2444,0.0748,54,weak,False,True
+job_satisfaction,voted_local_elections_2022,Economic,Governance,False,0.1041,0.1275,216,very weak,False,True
+job_satisfaction,voted_general_elections_2023,Economic,Governance,False,0.1617,0.0176,215,very weak,False,True
+job_satisfaction,home_disaster_ready,Economic,Disaster,False,0.0407,0.3028,644,very weak,False,False
+job_satisfaction,neighbourhood_support_group,Economic,Social,False,-0.006,0.8819,608,very weak,False,False
+job_satisfaction,out_of_newlands_during_day,Economic,Disaster,False,0.0707,0.0904,575,very weak,False,False
+job_satisfaction,place_out_of_newlands_disaster_ready,Economic,Disaster,False,0.0781,0.0943,460,very weak,False,False
+work_life_balance,leisure_time,Social,Social,True,0.2365,0.0,957,weak,False,False
+work_life_balance,be_yourself_in_nz,Social,Social,True,0.3098,0.0,946,weak,False,False
+work_life_balance,be_yourself_in_newlands,Social,Social,True,0.3404,0.0,936,weak,False,False
+work_life_balance,life_satisfaction,Social,Social,True,0.4436,0.0,946,moderate,False,False
+work_life_balance,meaning_and_purpose,Social,Social,True,0.3639,0.0,799,weak,False,False
+work_life_balance,family_wellbeing,Social,Social,True,0.3334,0.0,937,weak,False,False
+work_life_balance,access_to_natural_environment,Social,Environment,False,0.2804,0.0,943,weak,False,False
+work_life_balance,work_travel_time,Social,Economic,False,-0.0471,0.1514,929,very weak,False,False
+work_life_balance,basic_life_skills,Social,Economic,False,0.1534,0.0,945,very weak,False,False
+work_life_balance,newlands_resident,Social,Disaster,False,0.0916,0.0062,892,very weak,False,False
+work_life_balance,satisfaction_income,Social,Economic,False,0.3294,0.0,273,weak,False,True
+work_life_balance,confident_in_finding_a_new_job,Social,Economic,False,0.1633,0.0055,287,very weak,False,True
+work_life_balance,confident_water_safety,Social,Environment,False,0.254,0.0,287,weak,False,True
+work_life_balance,optimal_use_of_land,Social,Environment,False,0.2684,0.0,288,weak,False,True
+work_life_balance,personal_mental_health,Social,Social,True,0.5314,0.0,145,moderate,False,True
+work_life_balance,vote_local_elections_2019,Social,Governance,False,-0.046,0.7422,54,very weak,False,True
+work_life_balance,vote_general_election_2020,Social,Governance,False,-0.0837,0.545,55,very weak,False,True
+work_life_balance,voted_local_elections_2022,Social,Governance,False,0.0408,0.5333,236,very weak,False,True
+work_life_balance,voted_general_elections_2023,Social,Governance,False,0.0338,0.6066,235,very weak,False,True
+work_life_balance,home_disaster_ready,Social,Disaster,False,0.0457,0.2388,666,very weak,False,False
+work_life_balance,neighbourhood_support_group,Social,Social,True,0.0149,0.7084,631,very weak,False,False
+work_life_balance,out_of_newlands_during_day,Social,Disaster,False,0.0005,0.991,595,very weak,False,False
+work_life_balance,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1302,0.0047,469,very weak,False,False
+leisure_time,be_yourself_in_nz,Social,Social,True,0.165,0.0,994,very weak,False,False
+leisure_time,be_yourself_in_newlands,Social,Social,True,0.1562,0.0,984,very weak,False,False
+leisure_time,life_satisfaction,Social,Social,True,0.1391,0.0,994,very weak,False,False
+leisure_time,meaning_and_purpose,Social,Social,True,0.0814,0.0185,838,very weak,False,False
+leisure_time,family_wellbeing,Social,Social,True,0.1384,0.0,986,very weak,False,False
+leisure_time,access_to_natural_environment,Social,Environment,False,0.1012,0.0014,989,very weak,False,False
+leisure_time,work_travel_time,Social,Economic,False,0.0057,0.8605,952,very weak,False,False
+leisure_time,basic_life_skills,Social,Economic,False,-0.02,0.5283,993,very weak,False,False
+leisure_time,newlands_resident,Social,Disaster,False,0.0346,0.289,942,very weak,False,False
+leisure_time,satisfaction_income,Social,Economic,False,-0.0167,0.7846,272,very weak,False,True
+leisure_time,confident_in_finding_a_new_job,Social,Economic,False,-0.0096,0.8689,298,very weak,False,True
+leisure_time,confident_water_safety,Social,Environment,False,0.1019,0.0746,307,very weak,False,True
+leisure_time,optimal_use_of_land,Social,Environment,False,0.0403,0.4816,308,very weak,False,True
+leisure_time,personal_mental_health,Social,Social,True,0.301,0.0001,153,weak,False,True
+leisure_time,vote_local_elections_2019,Social,Governance,False,0.1676,0.2223,55,very weak,False,True
+leisure_time,vote_general_election_2020,Social,Governance,False,0.2535,0.0592,56,weak,False,True
+leisure_time,voted_local_elections_2022,Social,Governance,False,-0.0152,0.8091,255,very weak,False,True
+leisure_time,voted_general_elections_2023,Social,Governance,False,-0.0206,0.7441,255,very weak,False,True
+leisure_time,home_disaster_ready,Social,Disaster,False,0.0704,0.0612,707,very weak,False,False
+leisure_time,neighbourhood_support_group,Social,Social,True,0.1142,0.003,671,very weak,False,False
+leisure_time,out_of_newlands_during_day,Social,Disaster,False,-0.0629,0.1145,631,very weak,False,False
+leisure_time,place_out_of_newlands_disaster_ready,Social,Disaster,False,-0.0207,0.6511,481,very weak,False,False
+be_yourself_in_nz,be_yourself_in_newlands,Social,Social,True,0.8233,0.0,999,strong,False,False
+be_yourself_in_nz,life_satisfaction,Social,Social,True,0.4865,0.0,1009,moderate,False,False
+be_yourself_in_nz,meaning_and_purpose,Social,Social,True,0.4222,0.0,848,moderate,False,False
+be_yourself_in_nz,family_wellbeing,Social,Social,True,0.285,0.0,999,weak,False,False
+be_yourself_in_nz,access_to_natural_environment,Social,Environment,False,0.3291,0.0,1001,weak,False,False
+be_yourself_in_nz,work_travel_time,Social,Economic,False,-0.1172,0.0003,960,very weak,False,False
+be_yourself_in_nz,basic_life_skills,Social,Economic,False,0.3365,0.0,1006,weak,False,False
+be_yourself_in_nz,newlands_resident,Social,Disaster,False,0.106,0.001,953,very weak,False,False
+be_yourself_in_nz,satisfaction_income,Social,Economic,False,0.1842,0.0022,272,very weak,False,True
+be_yourself_in_nz,confident_in_finding_a_new_job,Social,Economic,False,0.1484,0.0101,299,very weak,False,True
+be_yourself_in_nz,confident_water_safety,Social,Environment,False,0.2668,0.0,311,weak,False,True
+be_yourself_in_nz,optimal_use_of_land,Social,Environment,False,0.181,0.0013,312,very weak,False,True
+be_yourself_in_nz,personal_mental_health,Social,Social,True,0.3526,0.0,157,weak,False,True
+be_yourself_in_nz,vote_local_elections_2019,Social,Governance,False,-0.1199,0.3943,53,very weak,False,True
+be_yourself_in_nz,vote_general_election_2020,Social,Governance,False,-0.0437,0.7549,54,very weak,False,True
+be_yourself_in_nz,voted_local_elections_2022,Social,Governance,False,-0.0032,0.9591,258,very weak,False,True
+be_yourself_in_nz,voted_general_elections_2023,Social,Governance,False,0.0228,0.7158,257,very weak,False,True
+be_yourself_in_nz,home_disaster_ready,Social,Disaster,False,-0.0059,0.8747,713,very weak,False,False
+be_yourself_in_nz,neighbourhood_support_group,Social,Social,True,0.0205,0.5935,679,very weak,False,False
+be_yourself_in_nz,out_of_newlands_during_day,Social,Disaster,False,-0.0434,0.273,639,very weak,False,False
+be_yourself_in_nz,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0358,0.4302,487,very weak,False,False
+be_yourself_in_newlands,life_satisfaction,Social,Social,True,0.5034,0.0,1004,moderate,False,False
+be_yourself_in_newlands,meaning_and_purpose,Social,Social,True,0.3946,0.0,842,weak,False,False
+be_yourself_in_newlands,family_wellbeing,Social,Social,True,0.2866,0.0,995,weak,False,False
+be_yourself_in_newlands,access_to_natural_environment,Social,Environment,False,0.3784,0.0,993,weak,False,False
+be_yourself_in_newlands,work_travel_time,Social,Economic,False,-0.0789,0.0151,949,very weak,False,False
+be_yourself_in_newlands,basic_life_skills,Social,Economic,False,0.2895,0.0,996,weak,False,False
+be_yourself_in_newlands,newlands_resident,Social,Disaster,False,0.1612,0.0,943,very weak,False,False
+be_yourself_in_newlands,satisfaction_income,Social,Economic,False,0.1873,0.0019,272,very weak,False,True
+be_yourself_in_newlands,confident_in_finding_a_new_job,Social,Economic,False,0.1533,0.0078,299,very weak,False,True
+be_yourself_in_newlands,confident_water_safety,Social,Environment,False,0.343,0.0,311,weak,False,True
+be_yourself_in_newlands,optimal_use_of_land,Social,Environment,False,0.1877,0.0008,312,very weak,False,True
+be_yourself_in_newlands,personal_mental_health,Social,Social,True,0.3284,0.0,157,weak,False,True
+be_yourself_in_newlands,vote_local_elections_2019,Social,Governance,False,-0.15,0.2853,53,very weak,False,True
+be_yourself_in_newlands,vote_general_election_2020,Social,Governance,False,-0.0759,0.5868,54,very weak,False,True
+be_yourself_in_newlands,voted_local_elections_2022,Social,Governance,False,0.0469,0.454,258,very weak,False,True
+be_yourself_in_newlands,voted_general_elections_2023,Social,Governance,False,0.0551,0.3794,257,very weak,False,True
+be_yourself_in_newlands,home_disaster_ready,Social,Disaster,False,0.0104,0.782,717,very weak,False,False
+be_yourself_in_newlands,neighbourhood_support_group,Social,Social,True,0.0761,0.0469,682,very weak,False,False
+be_yourself_in_newlands,out_of_newlands_during_day,Social,Disaster,False,0.0031,0.9374,642,very weak,False,False
+be_yourself_in_newlands,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0846,0.0615,489,very weak,False,False
+life_satisfaction,meaning_and_purpose,Social,Social,True,0.6786,0.0,850,moderate,False,False
+life_satisfaction,family_wellbeing,Social,Social,True,0.4484,0.0,1001,moderate,False,False
+life_satisfaction,access_to_natural_environment,Social,Environment,False,0.3707,0.0,1003,weak,False,False
+life_satisfaction,work_travel_time,Social,Economic,False,-0.0905,0.005,959,very weak,False,False
+life_satisfaction,basic_life_skills,Social,Economic,False,0.302,0.0,1006,weak,False,False
+life_satisfaction,newlands_resident,Social,Disaster,False,0.0833,0.0101,953,very weak,False,False
+life_satisfaction,satisfaction_income,Social,Economic,False,0.3537,0.0,272,weak,False,True
+life_satisfaction,confident_in_finding_a_new_job,Social,Economic,False,0.2691,0.0,299,weak,False,True
+life_satisfaction,confident_water_safety,Social,Environment,False,0.2338,0.0,311,weak,False,True
+life_satisfaction,optimal_use_of_land,Social,Environment,False,0.2531,0.0,312,weak,False,True
+life_satisfaction,personal_mental_health,Social,Social,True,0.7242,0.0,157,strong,False,True
+life_satisfaction,vote_local_elections_2019,Social,Governance,False,-0.0127,0.9286,53,very weak,False,True
+life_satisfaction,vote_general_election_2020,Social,Governance,False,0.0613,0.6612,54,very weak,False,True
+life_satisfaction,voted_local_elections_2022,Social,Governance,False,0.0013,0.984,258,very weak,False,True
+life_satisfaction,voted_general_elections_2023,Social,Governance,False,0.053,0.3982,257,very weak,False,True
+life_satisfaction,home_disaster_ready,Social,Disaster,False,0.106,0.0045,717,very weak,False,False
+life_satisfaction,neighbourhood_support_group,Social,Social,True,0.1248,0.0011,682,very weak,False,False
+life_satisfaction,out_of_newlands_during_day,Social,Disaster,False,0.0378,0.339,642,very weak,False,False
+life_satisfaction,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1017,0.0244,489,very weak,False,False
+meaning_and_purpose,family_wellbeing,Social,Social,True,0.4947,0.0,844,moderate,False,False
+meaning_and_purpose,access_to_natural_environment,Social,Environment,False,0.3825,0.0,842,weak,False,False
+meaning_and_purpose,work_travel_time,Social,Economic,False,-0.1257,0.0004,801,very weak,False,False
+meaning_and_purpose,basic_life_skills,Social,Economic,False,0.337,0.0,847,weak,False,False
+meaning_and_purpose,newlands_resident,Social,Disaster,False,-0.0292,0.4107,794,very weak,False,False
+meaning_and_purpose,satisfaction_income,Social,Economic,False,0.2473,0.0031,140,weak,False,True
+meaning_and_purpose,confident_in_finding_a_new_job,Social,Economic,False,0.2518,0.0017,151,weak,False,True
+meaning_and_purpose,confident_water_safety,Social,Environment,False,0.2561,0.0012,156,weak,False,True
+meaning_and_purpose,optimal_use_of_land,Social,Environment,False,0.151,0.0589,157,very weak,False,True
+meaning_and_purpose,personal_mental_health,Social,Social,True,0.6461,0.0,157,moderate,False,True
+meaning_and_purpose,vote_local_elections_2019,Social,Governance,False,0.0637,0.652,53,very weak,False,True
+meaning_and_purpose,vote_general_election_2020,Social,Governance,False,0.1004,0.4719,54,very weak,False,True
+meaning_and_purpose,voted_local_elections_2022,Social,Governance,False,-0.0569,0.5691,103,very weak,False,True
+meaning_and_purpose,voted_general_elections_2023,Social,Governance,False,-0.1589,0.1109,102,very weak,False,True
+meaning_and_purpose,home_disaster_ready,Social,Disaster,False,0.0715,0.0894,565,very weak,False,False
+meaning_and_purpose,neighbourhood_support_group,Social,Social,True,0.0594,0.1663,544,very weak,False,False
+meaning_and_purpose,out_of_newlands_during_day,Social,Disaster,False,-0.0294,0.5027,521,very weak,False,False
+meaning_and_purpose,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1053,0.0348,402,very weak,False,False
+family_wellbeing,access_to_natural_environment,Social,Environment,False,0.3475,0.0,991,weak,False,False
+family_wellbeing,work_travel_time,Social,Economic,False,-0.066,0.042,950,very weak,False,False
+family_wellbeing,basic_life_skills,Social,Economic,False,0.1858,0.0,996,very weak,False,False
+family_wellbeing,newlands_resident,Social,Disaster,False,-0.0077,0.8133,947,very weak,False,False
+family_wellbeing,satisfaction_income,Social,Economic,False,0.1978,0.001,272,very weak,False,True
+family_wellbeing,confident_in_finding_a_new_job,Social,Economic,False,0.2124,0.0002,299,weak,False,True
+family_wellbeing,confident_water_safety,Social,Environment,False,0.2738,0.0,311,weak,False,True
+family_wellbeing,optimal_use_of_land,Social,Environment,False,0.312,0.0,312,weak,False,True
+family_wellbeing,personal_mental_health,Social,Social,True,0.5171,0.0,157,moderate,False,True
+family_wellbeing,vote_local_elections_2019,Social,Governance,False,0.1902,0.1733,53,very weak,False,True
+family_wellbeing,vote_general_election_2020,Social,Governance,False,0.2636,0.0539,54,weak,False,True
+family_wellbeing,voted_local_elections_2022,Social,Governance,False,0.007,0.9106,258,very weak,False,True
+family_wellbeing,voted_general_elections_2023,Social,Governance,False,0.0535,0.3938,257,very weak,False,True
+family_wellbeing,home_disaster_ready,Social,Disaster,False,0.1831,0.0,711,very weak,False,False
+family_wellbeing,neighbourhood_support_group,Social,Social,True,0.0221,0.5658,678,very weak,False,False
+family_wellbeing,out_of_newlands_during_day,Social,Disaster,False,0.0095,0.8103,638,very weak,False,False
+family_wellbeing,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0987,0.0297,485,very weak,False,False
+access_to_natural_environment,work_travel_time,Environment,Economic,False,-0.09,0.0053,959,very weak,False,False
+access_to_natural_environment,basic_life_skills,Environment,Economic,False,0.3028,0.0,1005,weak,False,False
+access_to_natural_environment,newlands_resident,Environment,Disaster,False,-0.0198,0.5425,950,very weak,False,False
+access_to_natural_environment,satisfaction_income,Environment,Economic,False,0.2013,0.0008,271,weak,False,True
+access_to_natural_environment,confident_in_finding_a_new_job,Environment,Economic,False,0.0886,0.1271,298,very weak,False,True
+access_to_natural_environment,confident_water_safety,Environment,Environment,True,0.4229,0.0,310,moderate,False,True
+access_to_natural_environment,optimal_use_of_land,Environment,Environment,True,0.3146,0.0,311,weak,False,True
+access_to_natural_environment,personal_mental_health,Environment,Social,False,0.2479,0.0017,156,weak,False,True
+access_to_natural_environment,vote_local_elections_2019,Environment,Governance,False,-0.2008,0.1541,52,weak,False,True
+access_to_natural_environment,vote_general_election_2020,Environment,Governance,False,-0.1172,0.405,53,very weak,False,True
+access_to_natural_environment,voted_local_elections_2022,Environment,Governance,False,0.1185,0.0572,258,very weak,False,True
+access_to_natural_environment,voted_general_elections_2023,Environment,Governance,False,0.0934,0.1353,257,very weak,False,True
+access_to_natural_environment,home_disaster_ready,Environment,Disaster,False,0.0174,0.643,710,very weak,False,False
+access_to_natural_environment,neighbourhood_support_group,Environment,Social,False,0.0393,0.3069,677,very weak,False,False
+access_to_natural_environment,out_of_newlands_during_day,Environment,Disaster,False,0.0278,0.4834,637,very weak,False,False
+access_to_natural_environment,place_out_of_newlands_disaster_ready,Environment,Disaster,False,0.0619,0.1733,486,very weak,False,False
+work_travel_time,basic_life_skills,Economic,Economic,True,-0.0154,0.6335,963,very weak,False,False
+work_travel_time,newlands_resident,Economic,Disaster,False,-0.0399,0.2289,910,very weak,False,False
+work_travel_time,satisfaction_income,Economic,Economic,True,0.066,0.2786,272,very weak,False,True
+work_travel_time,confident_in_finding_a_new_job,Economic,Economic,True,-0.0633,0.2754,299,very weak,False,True
+work_travel_time,confident_water_safety,Economic,Environment,False,0.0139,0.808,309,very weak,False,True
+work_travel_time,optimal_use_of_land,Economic,Environment,False,0.0388,0.496,310,very weak,False,True
+work_travel_time,personal_mental_health,Economic,Social,False,-0.2379,0.0028,155,weak,False,True
+work_travel_time,vote_local_elections_2019,Economic,Governance,False,0.1525,0.2821,52,very weak,False,True
+work_travel_time,vote_general_election_2020,Economic,Governance,False,0.1084,0.446,52,very weak,False,True
+work_travel_time,voted_local_elections_2022,Economic,Governance,False,0.0327,0.6016,258,very weak,False,True
+work_travel_time,voted_general_elections_2023,Economic,Governance,False,0.0495,0.43,257,very weak,False,True
+work_travel_time,home_disaster_ready,Economic,Disaster,False,-0.1159,0.0024,682,very weak,False,False
+work_travel_time,neighbourhood_support_group,Economic,Social,False,-0.0108,0.7845,647,very weak,False,False
+work_travel_time,out_of_newlands_during_day,Economic,Disaster,False,0.2246,0.0,609,weak,False,False
+work_travel_time,place_out_of_newlands_disaster_ready,Economic,Disaster,False,0.0518,0.2569,481,very weak,False,False
+basic_life_skills,newlands_resident,Economic,Disaster,False,-0.0529,0.1021,955,very weak,False,False
+basic_life_skills,satisfaction_income,Economic,Economic,True,0.2413,0.0001,272,weak,False,True
+basic_life_skills,confident_in_finding_a_new_job,Economic,Economic,True,0.1823,0.0015,299,very weak,False,True
+basic_life_skills,confident_water_safety,Economic,Environment,False,0.146,0.0099,311,very weak,False,True
+basic_life_skills,optimal_use_of_land,Economic,Environment,False,0.1644,0.0035,312,very weak,False,True
+basic_life_skills,personal_mental_health,Economic,Social,False,0.3771,0.0,157,weak,False,True
+basic_life_skills,vote_local_elections_2019,Economic,Governance,False,0.3972,0.003,53,weak,False,True
+basic_life_skills,vote_general_election_2020,Economic,Governance,False,0.3813,0.0041,54,weak,False,True
+basic_life_skills,voted_local_elections_2022,Economic,Governance,False,0.124,0.0465,258,very weak,False,True
+basic_life_skills,voted_general_elections_2023,Economic,Governance,False,0.0936,0.1347,257,very weak,False,True
+basic_life_skills,home_disaster_ready,Economic,Disaster,False,0.1115,0.0028,716,very weak,False,False
+basic_life_skills,neighbourhood_support_group,Economic,Social,False,0.0194,0.614,681,very weak,False,False
+basic_life_skills,out_of_newlands_during_day,Economic,Disaster,False,0.0196,0.6212,641,very weak,False,False
+basic_life_skills,place_out_of_newlands_disaster_ready,Economic,Disaster,False,0.0957,0.0344,489,very weak,False,False
+newlands_resident,satisfaction_income,Disaster,Economic,False,-0.0306,0.6162,272,very weak,False,True
+newlands_resident,confident_in_finding_a_new_job,Disaster,Economic,False,0.0552,0.3414,299,very weak,False,True
+newlands_resident,confident_water_safety,Disaster,Environment,False,-0.0657,0.2483,311,very weak,False,True
+newlands_resident,optimal_use_of_land,Disaster,Environment,False,-0.0382,0.5015,312,very weak,False,True
+newlands_resident,personal_mental_health,Disaster,Social,False,-0.0079,0.9219,157,very weak,False,True
+newlands_resident,vote_local_elections_2019,Disaster,Governance,False,0.1522,0.2782,53,very weak,False,True
+newlands_resident,vote_general_election_2020,Disaster,Governance,False,0.19,0.1696,54,very weak,False,True
+newlands_resident,voted_local_elections_2022,Disaster,Governance,False,-0.0351,0.5746,258,very weak,False,True
+newlands_resident,voted_general_elections_2023,Disaster,Governance,False,-0.0723,0.2482,257,very weak,False,True
+newlands_resident,home_disaster_ready,Disaster,Disaster,True,0.0652,0.0825,710,very weak,False,False
+newlands_resident,neighbourhood_support_group,Disaster,Social,False,0.0036,0.9244,685,very weak,False,False
+newlands_resident,out_of_newlands_during_day,Disaster,Disaster,True,0.1265,0.0013,645,very weak,False,False
+newlands_resident,place_out_of_newlands_disaster_ready,Disaster,Disaster,True,0.2909,0.0,491,weak,False,False
+satisfaction_income,confident_in_finding_a_new_job,Economic,Economic,True,0.3599,0.0,273,weak,False,True
+satisfaction_income,confident_water_safety,Economic,Environment,False,0.2181,0.0003,271,weak,False,True
+satisfaction_income,optimal_use_of_land,Economic,Environment,False,0.2961,0.0,272,weak,False,True
+satisfaction_income,personal_mental_health,Economic,Social,False,0.2084,0.0133,140,weak,False,True
+satisfaction_income,vote_local_elections_2019,Economic,Governance,False,-0.0224,0.8719,55,very weak,False,True
+satisfaction_income,vote_general_election_2020,Economic,Governance,False,-0.0638,0.6449,55,very weak,False,True
+satisfaction_income,voted_local_elections_2022,Economic,Governance,False,-0.0006,0.9928,220,very weak,False,True
+satisfaction_income,voted_general_elections_2023,Economic,Governance,False,0.1289,0.0567,219,very weak,False,True
+satisfaction_income,home_disaster_ready,Economic,Disaster,False,0.146,0.0198,254,very weak,False,True
+satisfaction_income,neighbourhood_support_group,Economic,Social,False,0.031,0.6364,235,very weak,False,True
+satisfaction_income,out_of_newlands_during_day,Economic,Disaster,False,0.1569,0.02,219,very weak,False,True
+satisfaction_income,place_out_of_newlands_disaster_ready,Economic,Disaster,False,0.0497,0.5191,171,very weak,False,True
+confident_in_finding_a_new_job,confident_water_safety,Economic,Environment,False,0.1202,0.038,298,very weak,False,True
+confident_in_finding_a_new_job,optimal_use_of_land,Economic,Environment,False,0.1983,0.0005,299,very weak,False,True
+confident_in_finding_a_new_job,personal_mental_health,Economic,Social,False,0.262,0.0011,151,weak,False,True
+confident_in_finding_a_new_job,vote_local_elections_2019,Economic,Governance,False,0.2979,0.0268,55,weak,False,True
+confident_in_finding_a_new_job,vote_general_election_2020,Economic,Governance,False,0.3194,0.017,55,weak,False,True
+confident_in_finding_a_new_job,voted_local_elections_2022,Economic,Governance,False,-0.0798,0.2115,247,very weak,False,True
+confident_in_finding_a_new_job,voted_general_elections_2023,Economic,Governance,False,0.0183,0.7754,246,very weak,False,True
+confident_in_finding_a_new_job,home_disaster_ready,Economic,Disaster,False,0.1565,0.0092,275,very weak,False,True
+confident_in_finding_a_new_job,neighbourhood_support_group,Economic,Social,False,0.0598,0.3383,259,very weak,False,True
+confident_in_finding_a_new_job,out_of_newlands_during_day,Economic,Disaster,False,0.1563,0.0153,240,very weak,False,True
+confident_in_finding_a_new_job,place_out_of_newlands_disaster_ready,Economic,Disaster,False,-0.011,0.8841,180,very weak,False,True
+confident_water_safety,optimal_use_of_land,Environment,Environment,True,0.4968,0.0,311,moderate,False,True
+confident_water_safety,personal_mental_health,Environment,Social,False,0.152,0.0582,156,very weak,False,True
+confident_water_safety,vote_local_elections_2019,Environment,Governance,False,-0.1035,0.4673,52,very weak,False,True
+confident_water_safety,vote_general_election_2020,Environment,Governance,False,-0.1389,0.3229,53,very weak,False,True
+confident_water_safety,voted_local_elections_2022,Environment,Governance,False,0.0007,0.9912,258,very weak,False,True
+confident_water_safety,voted_general_elections_2023,Environment,Governance,False,-0.0448,0.4754,257,very weak,False,True
+confident_water_safety,home_disaster_ready,Environment,Disaster,False,0.0845,0.1535,287,very weak,False,True
+confident_water_safety,neighbourhood_support_group,Environment,Social,False,0.0349,0.568,270,very weak,False,True
+confident_water_safety,out_of_newlands_during_day,Environment,Disaster,False,0.1441,0.0228,249,very weak,False,True
+confident_water_safety,place_out_of_newlands_disaster_ready,Environment,Disaster,False,0.0738,0.3222,182,very weak,False,True
+optimal_use_of_land,personal_mental_health,Environment,Social,False,0.1349,0.092,157,very weak,False,True
+optimal_use_of_land,vote_local_elections_2019,Environment,Governance,False,-0.0549,0.6975,53,very weak,False,True
+optimal_use_of_land,vote_general_election_2020,Environment,Governance,False,0.0182,0.8968,54,very weak,False,True
+optimal_use_of_land,voted_local_elections_2022,Environment,Governance,False,-0.0812,0.1938,258,very weak,False,True
+optimal_use_of_land,voted_general_elections_2023,Environment,Governance,False,-0.0362,0.564,257,very weak,False,True
+optimal_use_of_land,home_disaster_ready,Environment,Disaster,False,0.1202,0.0415,288,very weak,False,True
+optimal_use_of_land,neighbourhood_support_group,Environment,Social,False,0.0493,0.4192,271,very weak,False,True
+optimal_use_of_land,out_of_newlands_during_day,Environment,Disaster,False,0.0966,0.1278,250,very weak,False,True
+optimal_use_of_land,place_out_of_newlands_disaster_ready,Environment,Disaster,False,0.1146,0.1227,183,very weak,False,True
+personal_mental_health,vote_local_elections_2019,Social,Governance,False,0.1583,0.2588,53,very weak,False,True
+personal_mental_health,vote_general_election_2020,Social,Governance,False,0.2134,0.1217,54,weak,False,True
+personal_mental_health,voted_local_elections_2022,Social,Governance,False,-0.0991,0.3201,103,very weak,False,True
+personal_mental_health,voted_general_elections_2023,Social,Governance,False,0.0599,0.5508,102,very weak,False,True
+personal_mental_health,home_disaster_ready,Social,Disaster,False,0.1288,0.131,139,very weak,False,True
+personal_mental_health,neighbourhood_support_group,Social,Social,True,0.0857,0.3219,136,very weak,False,True
+personal_mental_health,out_of_newlands_during_day,Social,Disaster,False,-0.01,0.9096,132,very weak,False,True
+personal_mental_health,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.0815,0.4261,98,very weak,False,True
+vote_local_elections_2019,vote_general_election_2020,Governance,Governance,True,0.8501,0.0,61,strong,False,True
+vote_local_elections_2019,voted_local_elections_2022,Governance,Governance,True,,,0,insufficient data,True,True
+vote_local_elections_2019,voted_general_elections_2023,Governance,Governance,True,,,0,insufficient data,True,True
+vote_local_elections_2019,home_disaster_ready,Governance,Disaster,False,0.2005,0.1591,51,weak,False,True
+vote_local_elections_2019,neighbourhood_support_group,Governance,Social,False,0.0729,0.6127,51,very weak,False,True
+vote_local_elections_2019,out_of_newlands_during_day,Governance,Disaster,False,0.0906,0.5249,52,very weak,False,True
+vote_local_elections_2019,place_out_of_newlands_disaster_ready,Governance,Disaster,False,,,44,insufficient data,True,True
+vote_general_election_2020,voted_local_elections_2022,Governance,Governance,True,,,0,insufficient data,True,True
+vote_general_election_2020,voted_general_elections_2023,Governance,Governance,True,,,0,insufficient data,True,True
+vote_general_election_2020,home_disaster_ready,Governance,Disaster,False,0.2889,0.0374,52,weak,False,True
+vote_general_election_2020,neighbourhood_support_group,Governance,Social,False,0.0612,0.6678,52,very weak,False,True
+vote_general_election_2020,out_of_newlands_during_day,Governance,Disaster,False,0.1593,0.256,53,very weak,False,True
+vote_general_election_2020,place_out_of_newlands_disaster_ready,Governance,Disaster,False,,,44,insufficient data,True,True
+voted_local_elections_2022,voted_general_elections_2023,Governance,Governance,True,0.5396,0.0,257,moderate,False,True
+voted_local_elections_2022,home_disaster_ready,Governance,Disaster,False,0.2212,0.0006,236,weak,False,True
+voted_local_elections_2022,neighbourhood_support_group,Governance,Social,False,0.0237,0.727,219,very weak,False,True
+voted_local_elections_2022,out_of_newlands_during_day,Governance,Disaster,False,-0.0685,0.3393,197,very weak,False,True
+voted_local_elections_2022,place_out_of_newlands_disaster_ready,Governance,Disaster,False,0.0362,0.6732,139,very weak,False,True
+voted_general_elections_2023,home_disaster_ready,Governance,Disaster,False,0.056,0.3935,235,very weak,False,True
+voted_general_elections_2023,neighbourhood_support_group,Governance,Social,False,0.0259,0.7045,218,very weak,False,True
+voted_general_elections_2023,out_of_newlands_during_day,Governance,Disaster,False,-0.1158,0.106,196,very weak,False,True
+voted_general_elections_2023,place_out_of_newlands_disaster_ready,Governance,Disaster,False,0.0098,0.9096,138,very weak,False,True
+home_disaster_ready,neighbourhood_support_group,Disaster,Social,False,0.2094,0.0,666,weak,False,False
+home_disaster_ready,out_of_newlands_during_day,Disaster,Disaster,True,0.0005,0.9903,631,very weak,False,False
+home_disaster_ready,place_out_of_newlands_disaster_ready,Disaster,Disaster,True,0.3075,0.0,481,weak,False,False
+neighbourhood_support_group,out_of_newlands_during_day,Social,Disaster,False,0.0893,0.0241,637,very weak,False,False
+neighbourhood_support_group,place_out_of_newlands_disaster_ready,Social,Disaster,False,0.1095,0.0158,485,very weak,False,False
+out_of_newlands_during_day,place_out_of_newlands_disaster_ready,Disaster,Disaster,True,0.3537,0.0,483,weak,False,False

@@ -1,45 +1,45 @@
 ﻿column,field_type,analysis_role,row_count,missing_count,missing_pct,unique_count,min_value,max_value,sample_values
-date,date,time,1052,0,0.00,102,01/10/2025,31/10/2022,11/05/2019 | 11/03/2019 | 11/02/2019 | 11/01/2019 | 29/10/2019
-age_range,ordered_categorical,demographic,1052,0,0.00,9,15-18,85+,35-44 | 45-54 | 55-64 | 65-74 | 25-34
-gender,categorical,demographic,1052,0,0.00,4,Do not wish to state,Non binary,Male | Female | Do not wish to state | Non binary
-language,integer,score,1052,2,0.19,53,0,100,100 | 95 | 0 | 65 | 60
-belonging,integer,score,1052,0,0.00,55,0,100,100 | 75 | 50 | 85 | 95
-cultural_activities,integer,score,1052,13,1.24,73,0,100,100 | 0 | 75 | 85 | 50
-te_reo,integer,score,1052,12,1.14,60,0,100,0 | 5 | 15 | 70 | 10
-cultural_knowledge,integer,score,1052,11,1.05,85,0,100,50 | 55 | 65 | 15 | 0
-trust_nz_government,integer,score,1052,16,1.52,86,0,100,35 | 50 | 55 | 80 | 60
-trust_local_council,integer,score,1052,24,2.28,87,0,100,65 | 75 | 55 | 80 | 100
-trust_nz_police,integer,score,1052,17,1.62,74,0,100,100 | 90 | 75 | 80 | 55
-safety,integer,score,1052,10,0.95,83,0,100,50 | 100 | 75 | 40 | 70
-discrimination,integer,score,1052,16,1.52,70,0,100,70 | 0 | 55 | 75 | 65
-loneliness,integer,score,1052,24,2.28,79,0,100,100 | 50 | 90 | 0 | 45
-independence,integer,score,1052,27,2.57,65,0,100,100 | 80 | 90 | 75 | 55
-support_in_crisis,integer,score,1052,24,2.28,68,0,100,70 | 50 | 100 | 90 | 75
-level_of_control,integer,score,1052,26,2.47,65,0,100,65 | 50 | 85 | 75 | 60
-volunteering_time,integer,score,1052,23,2.19,87,0,100,100 | 60 | 50 | 55 | 85
-paid_working_hours,integer,derived_continuous,1052,28,2.66,54,0,60,35 | 37 | 50 | 30 | 55
-job_satisfaction,integer,score,1052,118,11.22,75,0,100,30 | 50 | 35 | 75 | 55
-work_life_balance,integer,score,1052,85,8.08,84,0,100,100 | 35 | 50 | 30 | 65
-leisure_time,integer,derived_continuous,1052,36,3.42,56,0,60,10 | 20 | 0 | 15 | 30
-be_yourself_in_nz,integer,score,1052,38,3.61,73,0,100,100 | 75 | 50 | 65 | 45
-be_yourself_in_newlands,integer,score,1052,48,4.56,69,0,100,100 | 75 | 55 | 85 | 65
-life_satisfaction,integer,score,1052,38,3.61,72,0,100,100 | 50 | 55 | 80 | 70
-meaning_and_purpose,integer,score,1052,199,18.92,72,0,100,100 | 50 | 0 | 90 | 80
-family_wellbeing,integer,score,1052,48,4.56,69,0,100,100 | 10 | 65 | 80 | 60
-access_to_natural_environment,integer,score,1052,42,3.99,71,0,100,100 | 75 | 50 | 85 | 70
-work_travel_time,integer,derived_continuous,1052,84,7.98,54,0,60,15 | 10 | 50 | 40 | 30
-basic_life_skills,integer,score,1052,37,3.52,54,0,100,100 | 90 | 80 | 70 | 35
-newlands_resident,integer,binary,1052,92,8.75,2,0,1,0 | 1
-home_disaster_ready,integer,binary,1052,332,31.56,2,0,1,0 | 1
-neighbourhood_support_group,integer,binary,1052,367,34.89,2,0,1,0 | 1
-out_of_newlands_during_day,integer,binary,1052,407,38.69,2,0,1,1 | 0
-place_out_of_newlands_disaster_ready,integer,binary,1052,561,53.33,2,0,1,1 | 0
-satisfaction_income,integer,score,1052,777,73.86,36,0,100,85 | 71 | 23 | 0 | 100
-confident_in_finding_a_new_job,integer,score,1052,750,71.29,37,0,100,50 | 100 | 23 | 0 | 73
-confident_water_safety,integer,score,1052,741,70.44,38,0,100,80 | 52 | 11 | 75 | 74
-optimal_use_of_land,integer,score,1052,740,70.34,39,0,100,80 | 21 | 10 | 25 | 42
-personal_mental_health,integer,score,1052,895,85.08,41,18,100,79 | 46 | 38 | 64 | 69
-vote_local_elections_2019,integer,binary,1052,991,94.20,2,0,1,1 | 0
-vote_general_election_2020,integer,binary,1052,990,94.11,2,0,1,1 | 0
-voted_local_elections_2022,integer,binary,1052,794,75.48,2,0,1,1 | 0
-voted_general_elections_2023,integer,binary,1052,795,75.57,2,0,1,1 | 0
+date,date,time,831,0,0.00,121,01/10/2021,31/10/2022,11/05/2019 | 11/03/2019 | 11/02/2019 | 11/01/2019 | 29/10/2019
+age_range,ordered_categorical,demographic,831,0,0.00,9,15-18,85+,35-44 | 45-54 | 55-64 | 65-74 | 25-34
+gender,categorical,demographic,831,0,0.00,4,Do not wish to state,Non binary,Male | Female | Do not wish to state | Non binary
+language,integer,score,831,1,0.12,54,0,100,100 | 95 | 0 | 65 | 60
+belonging,integer,score,831,1,0.12,61,0,100,100 | 75 | 50 | 85 | 95
+cultural_activities,integer,score,831,15,1.81,80,0,100,100 | 0 | 75 | 85 | 50
+te_reo,integer,score,831,10,1.20,62,0,100,0 | 5 | 15 | 70 | 10
+cultural_knowledge,integer,score,831,10,1.20,91,0,100,50 | 55 | 65 | 15 | 0
+trust_nz_government,integer,score,831,12,1.44,88,0,100,35 | 50 | 55 | 80 | 60
+trust_local_council,integer,score,831,19,2.29,94,0,100,65 | 75 | 55 | 80 | 100
+trust_nz_police,integer,score,831,11,1.32,80,0,100,100 | 90 | 75 | 80 | 55
+safety,integer,score,831,8,0.96,87,0,100,50 | 100 | 75 | 40 | 70
+discrimination,integer,score,831,20,2.41,76,0,100,70 | 0 | 55 | 75 | 65
+loneliness,integer,score,831,23,2.77,82,0,100,100 | 50 | 90 | 0 | 45
+independence,integer,score,831,22,2.65,69,0,100,100 | 80 | 90 | 75 | 55
+support_in_crisis,integer,score,831,23,2.77,74,0,100,70 | 50 | 100 | 90 | 75
+level_of_control,integer,score,831,23,2.77,68,0,100,65 | 50 | 85 | 75 | 60
+volunteering_time,integer,score,831,22,2.65,94,0,100,100 | 60 | 50 | 55 | 85
+paid_working_hours,integer,derived_continuous,831,27,3.25,55,0,60,35 | 37 | 50 | 30 | 55
+job_satisfaction,integer,score,831,107,12.88,79,0,100,30 | 50 | 35 | 75 | 55
+work_life_balance,integer,score,831,73,8.78,87,0,100,100 | 35 | 50 | 30 | 65
+leisure_time,integer,derived_continuous,831,34,4.09,57,0,60,10 | 20 | 0 | 15 | 30
+be_yourself_in_nz,integer,score,831,34,4.09,77,0,100,100 | 75 | 50 | 65 | 45
+be_yourself_in_newlands,integer,score,831,39,4.69,72,0,100,100 | 75 | 55 | 85 | 65
+life_satisfaction,integer,score,831,34,4.09,76,0,100,100 | 50 | 55 | 80 | 70
+meaning_and_purpose,integer,score,831,192,23.10,76,0,100,100 | 50 | 0 | 90 | 80
+family_wellbeing,integer,score,831,39,4.69,71,0,100,100 | 10 | 65 | 80 | 60
+access_to_natural_environment,integer,score,831,37,4.45,74,0,100,100 | 75 | 50 | 85 | 70
+work_travel_time,integer,derived_continuous,831,73,8.78,55,0,60,15 | 10 | 50 | 40 | 30
+basic_life_skills,integer,score,831,34,4.09,58,0,100,100 | 90 | 80 | 70 | 35
+newlands_resident,integer,binary,831,139,16.73,2,0,1,0 | 1
+home_disaster_ready,integer,binary,831,200,24.07,2,0,1,0 | 1
+neighbourhood_support_group,integer,binary,831,231,27.80,2,0,1,0 | 1
+out_of_newlands_during_day,integer,binary,831,260,31.29,2,0,1,1 | 0
+place_out_of_newlands_disaster_ready,integer,binary,831,396,47.65,2,0,1,1 | 0
+satisfaction_income,integer,score,831,483,58.12,56,0,100,50 | 57 | 86 | 90 | 80
+confident_in_finding_a_new_job,integer,score,831,451,54.27,60,0,100,75 | 28 | 91 | 50 | 99
+confident_water_safety,integer,score,831,442,53.19,66,0,100,60 | 100 | 24 | 80 | 30
+optimal_use_of_land,integer,score,831,441,53.07,59,0,100,25 | 47 | 32 | 80 | 30
+personal_mental_health,integer,score,831,596,71.72,57,10,100,90 | 64 | 75 | 80 | 66
+vote_local_elections_2019,integer,binary,831,751,90.37,2,0,1,1 | 0
+vote_general_election_2020,integer,binary,831,751,90.37,2,0,1,1 | 0
+voted_local_elections_2022,integer,binary,831,573,68.95,2,0,1,1 | 0
+voted_general_elections_2023,integer,binary,831,574,69.07,2,0,1,1 | 0

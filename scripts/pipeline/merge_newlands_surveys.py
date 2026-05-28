@@ -60,7 +60,9 @@ SOURCE_TO_FINAL = {
     "41_confident_water_safety": "confident_water_safety",
     "42_optimal_use_of_land": "optimal_use_of_land",
     "37_vote_local_elections_2019": "vote_local_elections_2019",
+    "voted_2019_local_elections?": "vote_local_elections_2019",
     "36_vote_general_election_2020": "vote_general_election_2020",
+    "voted_2020_general_election?": "vote_general_election_2020",
     "45_voted_local_elections_2022": "voted_local_elections_2022",
     "44_voted_general_elections_2023": "voted_general_elections_2023",
 }
@@ -298,8 +300,12 @@ def parse_date(value: str) -> str:
     value = clean_string(value)
     if not value:
         return ""
+    value = value.replace(":SS", ":00")
 
     formats = [
+        "%Y-%m-%d %H:%M:%S",
+        "%Y-%m-%d %H:%M",
+        "%Y-%m-%d",
         "%m/%d/%Y %H:%M:%S",
         "%m/%d/%Y %I:%M:%S %p",
         "%m/%d/%Y %H:%M",
